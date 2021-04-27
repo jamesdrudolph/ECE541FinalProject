@@ -1,0 +1,1 @@
+C:/intelFPGA_lite/19.1/quartus/sopc_builder/bin/qsys-edit.exe C:/My_Designs/FinalProject/FinalProject/synthesis/embedded_soc.qsys --project-dir="c:/My_Designs/FinalProject/FinalProject/synthesis" --system-info=DEVICE_FAMILY="CycloneV" --system-info=DEVICE="5CSXFC6D6F31C6" --system-info=DEVICE_SPEEDGRADE="6" --jvm-max-heap-size="512M"  

@@ -1,0 +1,111 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=FinalProject
+
+[Library]
+FinalProject=.\FinalProject\FinalProject.lib
+
+[$LibMap$]
+FinalProject=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FAMILY=Quartus CycloneV
+SYNTH_TOOL=MV_QUARTUS_SYNTHESIS191
+RUN_MODE_SYNTH=1
+CSYNTH_TOOL=
+PHYSSYNTH_TOOL=
+IMPL_TOOL=
+FLOWTOOLS=IMPL_WITH_SYNTH
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\nothi\source\repos\FinalProject
+SYNTH_STATUS=none
+IMPL_STATUS=none
+VerilogDirsChanged=0
+
+[IMPLEMENTATION]
+UCF=
+DEVICE_TECHNOLOGY_MIGRATION_LIST=
+LAST_RUN=1619563376
+
+[SYNTHESIS]
+FAMILY=Quartus CycloneV
+DEVICE=5CSXFC6D6F31C
+SPEED=6
+TOPLEVEL=FinalProject
+JOB_DESCRIPTION=SynthesisTask
+JOB_SFM_RESOURCE=
+ENABLE_SIGNALTAP=0
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=
+OVERWRITE_PROJECT=1
+AUTO_CLOSE=0
+QSF_FILE_SELECTION=synthesis/FinalProject.qsf
+CHECK_PROJECT_OUTPUT_DIRECTORY=0
+CHECK_OPTIMIZE_HOLD_TIMING=1
+USE_SIGNALTAP_FILE=
+ENABLE_LOGIC_ANALYZER_INTERFACE=0
+USE_LOGIC_ANALYZER_INTERFACE_FILE=
+OLD_FAMILY=Quartus CycloneV
+CHECK_IMPORT_PIN_ASSIGNMENTS=1
+IMPORT_PIN_ASSIGNMENTS=.\my_first_fpga.qsf
+CHECK_GENERATE_FPGA_EXCHANGE_FILE=0
+GENERATE_FPGA_EXCHANGE_FILE=.\symbols\fpgaxchange
+BTM_IO_STANDARD=1.2V
+DEFAULT_QUARTUS_SETTINGS_FILE=..\..\..\intelFPGA_lite\19.1\quartus\bin64\assignment_defaults.qdf
+OUTPUT_IO_TIMING_NEAR_END_VMEAS_RISE=Half Signal Swing
+OUTPUT_IO_TIMING_NEAR_END_VMEAS_FALL=Half Signal Swing
+OUTPUT_IO_TIMING_FAR_END_VMEAS_RISE=Half Signal Swing
+OUTPUT_IO_TIMING_FAR_END_VMEAS_FALL=Half Signal Swing
+LAST_RUN=1619563376
+
+[Groups]
+MEGA=1
+Test=1
+
+[Files]
+/Common.vhd=-1
+/IrisDataManager.vhd=-1
+/FinalProject.vhd=-1
+/sqrt_tb.asdb=-1
+/sqrt_tb.awc=-1
+/irisdatamanager_tb.asdb=-1
+/irisdatamanager_tb.awc=-1
+MEGA/..\..\MEGA\sqrt.vhd=-1
+MEGA/..\..\MEGA\sqrt_inst.vhd=-1
+MEGA/..\..\MEGA\sqrt.cmp=-1
+Test/irisdatamanager_TB.vhd=-1
+Test/sqrt_TB.vhd=-1
+Test/irisdatamanager_TB_runtest.do=-1
+Test/sqrt_TB_runtest.do=-1
+Test/finalproject_TB.vhd=-1
+Test/finalproject_TB_runtest.do=-1
+
+[Files.Data]
+.\src\Common.vhd=VHDL Source Code
+.\src\IrisDataManager.vhd=VHDL Source Code
+.\src\FinalProject.vhd=VHDL Source Code
+.\src\sqrt_tb.asdb=Accelerated Waveform File
+.\src\sqrt_tb.awc=Accelerated Waveform Configuration
+.\src\irisdatamanager_tb.asdb=Accelerated Waveform File
+.\src\irisdatamanager_tb.awc=Accelerated Waveform Configuration
+.\MEGA\sqrt.vhd=VHDL SOURCE CODE
+.\MEGA\sqrt_inst.vhd=VHDL SOURCE CODE
+.\MEGA\sqrt.cmp=EXTERNAL FILE
+.\src\Test\irisdatamanager_TB.vhd=VHDL Test Bench
+.\src\Test\sqrt_TB.vhd=VHDL Test Bench
+.\src\Test\irisdatamanager_TB_runtest.do=Macro
+.\src\Test\sqrt_TB_runtest.do=Macro
+.\src\Test\finalproject_TB.vhd=VHDL Test Bench
+.\src\Test\finalproject_TB_runtest.do=Macro
+

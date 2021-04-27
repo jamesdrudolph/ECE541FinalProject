@@ -1,0 +1,470 @@
+# Design: Design FinalProject already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Intel Quartus Prime Standard Synthesis & Implementation 19.1
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+# Launching Platform Designer
+# Platform Designer has been launched
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/FinalProject.vhd $dsn/src/IrisDataManager.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => FinalProject
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Top-level unit(s) detected:
+# Entity => FinalProject
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  62.0 [ms]
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Top-level unit(s) detected:
+# Entity => FinalProject
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  62.0 [ms]
+# Warning: Quartus 19.1 has been aborted
+# Warning: Importing pin assigments requires the "Overwrite existing project file" option to be selected.
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/MEGA/sqrt.vhd $dsn/MEGA/sqrt_inst.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt_inst.vhd
+# Top-level unit(s) detected:
+# Entity => FinalProject
+# Entity => sqrt
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Error: COMP96_0016: ../MEGA/sqrt_inst.vhd : (1, 1): Design unit declaration expected.
+# Compile failure 1 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/MEGA/sqrt.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# Top-level unit(s) detected:
+# Entity => FinalProject
+# Entity => sqrt
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  93.0 [ms]
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/MEGA/sqrt.vhd $dsn/src/Test/sqrt_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/sqrt_TB.vhd
+# Compile Entity "sqrt_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "sqrt_tb"
+# Compile Configuration "TESTBENCH_FOR_sqrt"
+# Top-level unit(s) detected:
+# Entity => FinalProject
+# Configuration => TESTBENCH_FOR_sqrt
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L arriaii -L arriaii_hssi -L arriaii_hssi_ver -L arriaii_pcie_hip -L arriaii_pcie_hip_ver -L arriaii_ver -L arriaiigz -L arriaiigz_hssi -L arriaiigz_hssi_ver -L arriaiigz_pcie_hip -L arriaiigz_pcie_hip_ver -L arriaiigz_ver -L arriav -L arriav_hssi_ver -L arriav_pcie_hip_ver -L arriav_ver -L arriavgz -L arriavgz_hssi -L arriavgz_hssi_ver -L arriavgz_pcie_hip -L arriavgz_pcie_hip_ver -L arriavgz_ver -L cyclone10lp -L cyclone10lp_ver -L cycloneiv -L cycloneiv_hssi -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L cycloneive -L cycloneive_ver -L cyclonev -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L cyclonev_ver -L fiftyfivenm -L fiftyfivenm_ver -L lpm -L lpm_ver -L maxii -L maxii_ver -L maxv -L maxv_ver -L sgate -L sgate_ver -L stratixiv -L stratixiv_hssi -L stratixiv_hssi_ver -L stratixiv_pcie_hip -L stratixiv_pcie_hip_ver -L stratixiv_ver -L stratixv -L stratixv_hssi -L stratixv_hssi_ver -L stratixv_pcie_hip -L stratixv_pcie_hip_ver -L stratixv_ver -L twentynm -L twentynm_hip -L twentynm_hip_ver -L twentynm_hssi -L twentynm_hssi_ver -L twentynm_ver -PL altera -PL altera_lnsim -PL altera_lnsim_ver -PL altera_mf -PL altera_mf_ver -PL altera_ver -PL arriaii -PL arriaii_hssi -PL arriaii_hssi_ver -PL arriaii_pcie_hip -PL arriaii_pcie_hip_ver -PL arriaii_ver -PL arriaiigz -PL arriaiigz_hssi -PL arriaiigz_hssi_ver -PL arriaiigz_pcie_hip -PL arriaiigz_pcie_hip_ver -PL arriaiigz_ver -PL arriav -PL arriav_hssi_ver -PL arriav_pcie_hip_ver -PL arriav_ver -PL arriavgz -PL arriavgz_hssi -PL arriavgz_hssi_ver -PL arriavgz_pcie_hip -PL arriavgz_pcie_hip_ver -PL arriavgz_ver -PL cyclone10lp -PL cyclone10lp_ver -PL cycloneiv -PL cycloneiv_hssi -PL cycloneiv_hssi_ver -PL cycloneiv_pcie_hip -PL cycloneiv_pcie_hip_ver -PL cycloneiv_ver -PL cycloneive -PL cycloneive_ver -PL cyclonev -PL cyclonev_hssi_ver -PL cyclonev_pcie_hip_ver -PL cyclonev_ver -PL fiftyfivenm -PL fiftyfivenm_ver -PL lpm -PL lpm_ver -PL maxii -PL maxii_ver -PL maxv -PL maxv_ver -PL sgate -PL sgate_ver -PL stratixiv -PL stratixiv_hssi -PL stratixiv_hssi_ver -PL stratixiv_pcie_hip -PL stratixiv_pcie_hip_ver -PL stratixiv_ver -PL stratixv -PL stratixv_hssi -PL stratixv_hssi_ver -PL stratixv_pcie_hip -PL stratixv_pcie_hip_ver -PL stratixv_ver -PL twentynm -PL twentynm_hip -PL twentynm_hip_ver -PL twentynm_hssi -PL twentynm_hssi_ver -PL twentynm_ver +access +r +m+sqrt_tb sqrt_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7215 kB (elbread=1280 elab2=5797 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\FinalProject\FinalProject\src\wave.asdb
+#  6:25 PM, Tuesday, April 27, 2021
+#  Simulation has been initialized
+# 20 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/FinalProject/FinalProject/src/wave.asdb'.
+# wave -rec *
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# Waveform file 'c:/My_Designs/FinalProject/FinalProject/src/sqrt_tb.awc' connected to 'c:/My_Designs/FinalProject/FinalProject/src/sqrt_tb.asdb'.
+# Adding file c:\My_Designs\FinalProject\FinalProject\src\sqrt_tb.asdb ... Done
+# Adding file c:\My_Designs\FinalProject\FinalProject\src\sqrt_tb.awc ... Done
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Error: COMP96_0015: Test/irisdatamanager_TB.vhd : (20, 25): ';' expected.
+# Error: COMP96_0015: Test/irisdatamanager_TB.vhd : (21, 36): ';' expected.
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Error: COMP96_0209: Test/irisdatamanager_TB.vhd : (55, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (13, 12): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (13, 12): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (14, 23): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (14, 23): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (15, 24): Unknown identifier "UNSIGNED".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (15, 24): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (20, 15): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (20, 15): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (21, 26): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (21, 26): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (22, 27): Unknown identifier "UNSIGNED".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (22, 27): Unknown type.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (33, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (34, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (35, 4): Formal must be locally static name.
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Error: COMP96_0209: Test/irisdatamanager_TB.vhd : (55, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (13, 12): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (13, 12): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (14, 23): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (14, 23): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (15, 24): Unknown identifier "UNSIGNED".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (15, 24): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (20, 15): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (20, 15): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (21, 26): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (21, 26): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (22, 27): Unknown identifier "UNSIGNED".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (22, 27): Unknown type.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (33, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (34, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (35, 4): Formal must be locally static name.
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Error: COMP96_0209: Test/irisdatamanager_TB.vhd : (44, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (13, 12): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (13, 12): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (14, 23): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (14, 23): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (15, 24): Unknown identifier "UNSIGNED".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (15, 24): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (20, 15): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (20, 15): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (21, 26): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (21, 26): Unknown type.
+# Error: COMP96_0078: Test/irisdatamanager_TB.vhd : (22, 27): Unknown identifier "UNSIGNED".
+# Error: COMP96_0064: Test/irisdatamanager_TB.vhd : (22, 27): Unknown type.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (33, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (34, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/irisdatamanager_TB.vhd : (35, 4): Formal must be locally static name.
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Error: COMP96_0209: Test/irisdatamanager_TB.vhd : (44, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L arriaii -L arriaii_hssi -L arriaii_hssi_ver -L arriaii_pcie_hip -L arriaii_pcie_hip_ver -L arriaii_ver -L arriaiigz -L arriaiigz_hssi -L arriaiigz_hssi_ver -L arriaiigz_pcie_hip -L arriaiigz_pcie_hip_ver -L arriaiigz_ver -L arriav -L arriav_hssi_ver -L arriav_pcie_hip_ver -L arriav_ver -L arriavgz -L arriavgz_hssi -L arriavgz_hssi_ver -L arriavgz_pcie_hip -L arriavgz_pcie_hip_ver -L arriavgz_ver -L cyclone10lp -L cyclone10lp_ver -L cycloneiv -L cycloneiv_hssi -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L cycloneive -L cycloneive_ver -L cyclonev -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L cyclonev_ver -L fiftyfivenm -L fiftyfivenm_ver -L lpm -L lpm_ver -L maxii -L maxii_ver -L maxv -L maxv_ver -L sgate -L sgate_ver -L stratixiv -L stratixiv_hssi -L stratixiv_hssi_ver -L stratixiv_pcie_hip -L stratixiv_pcie_hip_ver -L stratixiv_ver -L stratixv -L stratixv_hssi -L stratixv_hssi_ver -L stratixv_pcie_hip -L stratixv_pcie_hip_ver -L stratixv_ver -L twentynm -L twentynm_hip -L twentynm_hip_ver -L twentynm_hssi -L twentynm_hssi_ver -L twentynm_ver -PL altera -PL altera_lnsim -PL altera_lnsim_ver -PL altera_mf -PL altera_mf_ver -PL altera_ver -PL arriaii -PL arriaii_hssi -PL arriaii_hssi_ver -PL arriaii_pcie_hip -PL arriaii_pcie_hip_ver -PL arriaii_ver -PL arriaiigz -PL arriaiigz_hssi -PL arriaiigz_hssi_ver -PL arriaiigz_pcie_hip -PL arriaiigz_pcie_hip_ver -PL arriaiigz_ver -PL arriav -PL arriav_hssi_ver -PL arriav_pcie_hip_ver -PL arriav_ver -PL arriavgz -PL arriavgz_hssi -PL arriavgz_hssi_ver -PL arriavgz_pcie_hip -PL arriavgz_pcie_hip_ver -PL arriavgz_ver -PL cyclone10lp -PL cyclone10lp_ver -PL cycloneiv -PL cycloneiv_hssi -PL cycloneiv_hssi_ver -PL cycloneiv_pcie_hip -PL cycloneiv_pcie_hip_ver -PL cycloneiv_ver -PL cycloneive -PL cycloneive_ver -PL cyclonev -PL cyclonev_hssi_ver -PL cyclonev_pcie_hip_ver -PL cyclonev_ver -PL fiftyfivenm -PL fiftyfivenm_ver -PL lpm -PL lpm_ver -PL maxii -PL maxii_ver -PL maxv -PL maxv_ver -PL sgate -PL sgate_ver -PL stratixiv -PL stratixiv_hssi -PL stratixiv_hssi_ver -PL stratixiv_pcie_hip -PL stratixiv_pcie_hip_ver -PL stratixiv_ver -PL stratixv -PL stratixv_hssi -PL stratixv_hssi_ver -PL stratixv_pcie_hip -PL stratixv_pcie_hip_ver -PL stratixv_ver -PL twentynm -PL twentynm_hip -PL twentynm_hip_ver -PL twentynm_hssi -PL twentynm_hssi_ver -PL twentynm_ver +access +r +m+sqrt_tb sqrt_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7215 kB (elbread=1280 elab2=5797 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\FinalProject\FinalProject\src\wave.asdb
+#  6:34 PM, Tuesday, April 27, 2021
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 -L altera -L altera_lnsim -L altera_lnsim_ver -L altera_mf -L altera_mf_ver -L altera_ver -L arriaii -L arriaii_hssi -L arriaii_hssi_ver -L arriaii_pcie_hip -L arriaii_pcie_hip_ver -L arriaii_ver -L arriaiigz -L arriaiigz_hssi -L arriaiigz_hssi_ver -L arriaiigz_pcie_hip -L arriaiigz_pcie_hip_ver -L arriaiigz_ver -L arriav -L arriav_hssi_ver -L arriav_pcie_hip_ver -L arriav_ver -L arriavgz -L arriavgz_hssi -L arriavgz_hssi_ver -L arriavgz_pcie_hip -L arriavgz_pcie_hip_ver -L arriavgz_ver -L cyclone10lp -L cyclone10lp_ver -L cycloneiv -L cycloneiv_hssi -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L cycloneive -L cycloneive_ver -L cyclonev -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L cyclonev_ver -L fiftyfivenm -L fiftyfivenm_ver -L lpm -L lpm_ver -L maxii -L maxii_ver -L maxv -L maxv_ver -L sgate -L sgate_ver -L stratixiv -L stratixiv_hssi -L stratixiv_hssi_ver -L stratixiv_pcie_hip -L stratixiv_pcie_hip_ver -L stratixiv_ver -L stratixv -L stratixv_hssi -L stratixv_hssi_ver -L stratixv_pcie_hip -L stratixv_pcie_hip_ver -L stratixv_ver -L twentynm -L twentynm_hip -L twentynm_hip_ver -L twentynm_hssi -L twentynm_hssi_ver -L twentynm_ver -PL altera -PL altera_lnsim -PL altera_lnsim_ver -PL altera_mf -PL altera_mf_ver -PL altera_ver -PL arriaii -PL arriaii_hssi -PL arriaii_hssi_ver -PL arriaii_pcie_hip -PL arriaii_pcie_hip_ver -PL arriaii_ver -PL arriaiigz -PL arriaiigz_hssi -PL arriaiigz_hssi_ver -PL arriaiigz_pcie_hip -PL arriaiigz_pcie_hip_ver -PL arriaiigz_ver -PL arriav -PL arriav_hssi_ver -PL arriav_pcie_hip_ver -PL arriav_ver -PL arriavgz -PL arriavgz_hssi -PL arriavgz_hssi_ver -PL arriavgz_pcie_hip -PL arriavgz_pcie_hip_ver -PL arriavgz_ver -PL cyclone10lp -PL cyclone10lp_ver -PL cycloneiv -PL cycloneiv_hssi -PL cycloneiv_hssi_ver -PL cycloneiv_pcie_hip -PL cycloneiv_pcie_hip_ver -PL cycloneiv_ver -PL cycloneive -PL cycloneive_ver -PL cyclonev -PL cyclonev_hssi_ver -PL cyclonev_pcie_hip_ver -PL cyclonev_ver -PL fiftyfivenm -PL fiftyfivenm_ver -PL lpm -PL lpm_ver -PL maxii -PL maxii_ver -PL maxv -PL maxv_ver -PL sgate -PL sgate_ver -PL stratixiv -PL stratixiv_hssi -PL stratixiv_hssi_ver -PL stratixiv_pcie_hip -PL stratixiv_pcie_hip_ver -PL stratixiv_ver -PL stratixv -PL stratixv_hssi -PL stratixv_hssi_ver -PL stratixv_pcie_hip -PL stratixv_pcie_hip_ver -PL stratixv_ver -PL twentynm -PL twentynm_hip -PL twentynm_hip_ver -PL twentynm_hssi -PL twentynm_hssi_ver -PL twentynm_ver +access +r +m+irisdatamanager_tb irisdatamanager_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7221 kB (elbread=1280 elab2=5803 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\FinalProject\FinalProject\src\wave.asdb
+#  6:34 PM, Tuesday, April 27, 2021
+#  Simulation has been initialized
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/FinalProject/FinalProject/src/wave.asdb'.
+# wave -rec *
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Test/irisdatamanager_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7221 kB (elbread=1280 elab2=5803 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\FinalProject\FinalProject\src\wave.asdb
+#  6:36 PM, Tuesday, April 27, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/FinalProject/FinalProject/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# Waveform file 'c:/My_Designs/FinalProject/FinalProject/src/irisdatamanager_tb.awc' connected to 'c:/My_Designs/FinalProject/FinalProject/src/irisdatamanager_tb.asdb'.
+# Adding file c:\My_Designs\FinalProject\FinalProject\src\irisdatamanager_tb.asdb ... Done
+# Adding file c:\My_Designs\FinalProject\FinalProject\src\irisdatamanager_tb.awc ... Done
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/MEGA/sqrt.vhd $dsn/src/Test/irisdatamanager_TB.vhd $dsn/src/Test/sqrt_TB.vhd $dsn/src/Test/finalproject_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/sqrt_TB.vhd
+# Compile Entity "sqrt_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "sqrt_tb"
+# Compile Configuration "TESTBENCH_FOR_sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/finalproject_TB.vhd
+# Compile Entity "finalproject_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "finalproject_tb"
+# Compile Configuration "TESTBENCH_FOR_finalproject"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_irisdatamanager
+# Configuration => TESTBENCH_FOR_sqrt
+# Configuration => TESTBENCH_FOR_finalproject
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/finalproject_TB.vhd
+# Compile Architecture "TB_ARCHITECTURE" of Entity "finalproject_tb"
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (13, 17): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (13, 17): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (14, 12): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (14, 12): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (15, 11): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (15, 11): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (16, 14): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (16, 14): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (20, 20): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (20, 20): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (21, 15): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (21, 15): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (22, 14): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (22, 14): Unknown type.
+# Error: COMP96_0078: Test/finalproject_TB.vhd : (24, 16): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Test/finalproject_TB.vhd : (24, 16): Unknown type.
+# Error: COMP96_0333: Test/finalproject_TB.vhd : (33, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/finalproject_TB.vhd : (34, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/finalproject_TB.vhd : (35, 4): Formal must be locally static name.
+# Error: COMP96_0333: Test/finalproject_TB.vhd : (36, 4): Formal must be locally static name.
+# Compile Configuration "TESTBENCH_FOR_finalproject"
+# Error: COMP96_0209: Test/finalproject_TB.vhd : (44, 6): Unknown architecture name used in configuration declaration.
+# Compile failure 21 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/MEGA/sqrt.vhd $dsn/src/Test/irisdatamanager_TB.vhd $dsn/src/Test/sqrt_TB.vhd $dsn/src/Test/finalproject_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (40, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/sqrt_TB.vhd
+# Compile Entity "sqrt_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "sqrt_tb"
+# Compile Configuration "TESTBENCH_FOR_sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/finalproject_TB.vhd
+# Compile Entity "finalproject_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "finalproject_tb"
+# Compile Configuration "TESTBENCH_FOR_finalproject"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/MEGA/sqrt.vhd $dsn/src/Test/irisdatamanager_TB.vhd $dsn/src/Test/sqrt_TB.vhd $dsn/src/Test/finalproject_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:/My_Designs/FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: c:/My_Designs/FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# File: c:/My_Designs/FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/sqrt_TB.vhd
+# Compile Entity "sqrt_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "sqrt_tb"
+# Compile Configuration "TESTBENCH_FOR_sqrt"
+# File: c:/My_Designs/FinalProject/FinalProject/src/Test/finalproject_TB.vhd
+# Compile Entity "finalproject_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "finalproject_tb"
+# Compile Configuration "TESTBENCH_FOR_finalproject"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_irisdatamanager
+# Configuration => TESTBENCH_FOR_sqrt
+# Configuration => TESTBENCH_FOR_finalproject
+# File: c:/My_Designs/FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (54, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.

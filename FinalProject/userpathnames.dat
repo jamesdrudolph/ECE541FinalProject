@@ -1,0 +1,9 @@
+[ExLibList-used]
+MV_QUARTUS_SYNTHESIS191=1
+[VerilogDirs-used]
+tools=1
+[MV_QUARTUS_SYNTHESIS191*Files]
+synthesis\embedded_soc\synthesis\embedded_soc.qip=
+[tools*VerilogDirs]
+src=user
+MEGA=user
