@@ -36,7 +36,7 @@ VerilogDirsChanged=0
 [IMPLEMENTATION]
 UCF=
 DEVICE_TECHNOLOGY_MIGRATION_LIST=
-LAST_RUN=1619563376
+LAST_RUN=1619572760
 
 [SYNTHESIS]
 FAMILY=Quartus CycloneV
@@ -67,7 +67,7 @@ OUTPUT_IO_TIMING_NEAR_END_VMEAS_RISE=Half Signal Swing
 OUTPUT_IO_TIMING_NEAR_END_VMEAS_FALL=Half Signal Swing
 OUTPUT_IO_TIMING_FAR_END_VMEAS_RISE=Half Signal Swing
 OUTPUT_IO_TIMING_FAR_END_VMEAS_FALL=Half Signal Swing
-LAST_RUN=1619563376
+LAST_RUN=1619572760
 
 [Groups]
 MEGA=1
@@ -75,17 +75,22 @@ Test=1
 
 [Files]
 /Common.vhd=-1
+/EuclideanDistance.vhd=-1
 /IrisDataManager.vhd=-1
 /FinalProject.vhd=-1
 /sqrt_tb.asdb=-1
 /sqrt_tb.awc=-1
 /irisdatamanager_tb.asdb=-1
 /irisdatamanager_tb.awc=-1
+/euclideandistance_tb.asdb=-1
+/euclideandistance_tb.awc=-1
 MEGA/..\..\MEGA\sqrt.vhd=-1
 MEGA/..\..\MEGA\sqrt_inst.vhd=-1
 MEGA/..\..\MEGA\sqrt.cmp=-1
+Test/euclideandistance_TB.vhd=-1
 Test/irisdatamanager_TB.vhd=-1
 Test/sqrt_TB.vhd=-1
+Test/euclideandistance_TB_runtest.do=-1
 Test/irisdatamanager_TB_runtest.do=-1
 Test/sqrt_TB_runtest.do=-1
 Test/finalproject_TB.vhd=-1
@@ -93,17 +98,22 @@ Test/finalproject_TB_runtest.do=-1
 
 [Files.Data]
 .\src\Common.vhd=VHDL Source Code
+.\src\EuclideanDistance.vhd=VHDL Source Code
 .\src\IrisDataManager.vhd=VHDL Source Code
 .\src\FinalProject.vhd=VHDL Source Code
 .\src\sqrt_tb.asdb=Accelerated Waveform File
 .\src\sqrt_tb.awc=Accelerated Waveform Configuration
 .\src\irisdatamanager_tb.asdb=Accelerated Waveform File
 .\src\irisdatamanager_tb.awc=Accelerated Waveform Configuration
+.\src\euclideandistance_tb.asdb=Accelerated Waveform File
+.\src\euclideandistance_tb.awc=Accelerated Waveform Configuration
 .\MEGA\sqrt.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt_inst.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt.cmp=EXTERNAL FILE
+.\src\Test\euclideandistance_TB.vhd=VHDL Test Bench
 .\src\Test\irisdatamanager_TB.vhd=VHDL Test Bench
 .\src\Test\sqrt_TB.vhd=VHDL Test Bench
+.\src\Test\euclideandistance_TB_runtest.do=Macro
 .\src\Test\irisdatamanager_TB_runtest.do=Macro
 .\src\Test\sqrt_TB_runtest.do=Macro
 .\src\Test\finalproject_TB.vhd=VHDL Test Bench

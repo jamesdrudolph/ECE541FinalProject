@@ -1,4 +1,5 @@
 i<>.\src\Common.vhd
 i<>.\src\IrisDataManager.vhd
 i<>.\src\FinalProject.vhd
+i<>.\src\EuclideanDistance.vhd
 i<>.\MEGA\sqrt.vhd

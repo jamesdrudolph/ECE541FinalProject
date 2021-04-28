@@ -31,14 +31,7 @@ architecture arch of FinalProject is
 		);
 	end component IrisDataManager;
 	
-	component sqrt
-		port(
-			clk 		: in 	std_logic;
-			radical 	: in 	std_logic_vector(15 downto 0);
-			q 			: out	std_logic_vector(7 downto 0);
-			remainder	: out 	std_logic_vector(8 downto 0)
-		);
-	end component;
+
 
 	
 	signal LEDR_export	:	std_logic_vector(9 downto 0);
@@ -65,13 +58,5 @@ begin
 		SelectDataType		=> IrisDataType,
 		SelectDataIndex		=> IrisIndex,
 		SelectDataOut		=> IrisDataOut
-	);
-	
-	u2 : sqrt
-	port map(
-		clk 		=> CLOCK_50,
-		radical 	=> SqrtRadical,
-		q 			=> SqrtResult,
-		remainder	=> SqrtRemainder
 	);
 end architecture arch;

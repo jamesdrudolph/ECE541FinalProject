@@ -123,11 +123,12 @@ set_global_assignment -name ALLOW_REGISTER_MERGING ON
 set_global_assignment -name ALLOW_REGISTER_DUPLICATION ON
 set_global_assignment -name ALLOW_REGISTER_RETIMING ON
 set_global_assignment -name ENABLE_REDUCED_MEMORY_MODE OFF
-set_global_assignment -name USER_LIBRARIES "./../src;./../MEGA"
-set_global_assignment -name QIP_FILE "./../synthesis/embedded_soc/synthesis/embedded_soc.qip"
+set_global_assignment -name USER_LIBRARIES "C:/Users/nothi/source/repos/ECE541FinalProject/FinalProject/src;C:/Users/nothi/source/repos/ECE541FinalProject/FinalProject/MEGA"
+set_global_assignment -name QIP_FILE "C:/Users/nothi/source/repos/ECE541FinalProject/FinalProject/synthesis/embedded_soc/synthesis/embedded_soc.qip"
 set_global_assignment -name VHDL_FILE "./../src/Common.vhd"
 set_global_assignment -name VHDL_FILE "./../src/IrisDataManager.vhd"
 set_global_assignment -name VHDL_FILE "./../src/FinalProject.vhd"
+set_global_assignment -name VHDL_FILE "./../src/EuclideanDistance.vhd"
 set_global_assignment -name VHDL_FILE "./../MEGA/sqrt.vhd"
 set_global_assignment -name TOP_LEVEL_ENTITY FinalProject
 set_instance_assignment -entity myFirstFpga -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50 
