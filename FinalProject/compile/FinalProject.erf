@@ -1,5 +1,5 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: C:/Users/nothi/source/repos/ECE541FinalProject/FinalProject/src/EuclideanDistance.vhd" 
-MESSAGE "Compile Entity "EuclideanDistance"" 
-MESSAGE "Compile Architecture "arch" of Entity "EuclideanDistance"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 
+MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 
+MESSAGE "Compile Entity "FinalProject"" 
+MESSAGE "Compile Architecture "arch" of Entity "FinalProject"" 
+WARNING ELAB1_0026: "There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found)." "C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 60 0
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]" 
