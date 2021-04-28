@@ -1,13 +1,13 @@
-timestamp=1619579307945
+timestamp=1619581244177
 
 [~A]
-ModifyID=13
+ModifyID=15
 Version=74
 
 [~MFT]
-0=10|0FinalProject.mgf|25555|2799
-1=2|1FinalProject.mgf|30960|8766
-3=0|3FinalProject.mgf|3400|569
+0=8|0FinalProject.mgf|29612|6363
+1=2|1FinalProject.mgf|38149|15955
+3=2|3FinalProject.mgf|3696|569
 
 [common]
 E=1*30458
@@ -39,14 +39,15 @@ Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|803
 Version/tb_architecture=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beaddf211a5ad286f322da2fa1edfe23b1a
 
 [finalproject]
-A/arch=21|../src/FinalProject.vhd|15|1*30960
+A/arch=21|../src/FinalProject.vhd|15|1*38149
+BinI32/arch=3*3696
 I=0*25555
-I/arch=0*25430
+I/arch=0*29612
 M=11|0|ve4|1619579307940|../src/FinalProject.vhd|0*19930*0x07b1194bf4a9082b4cca956997012b1f7868ff07|0*20298*0xd986fd7175c8cf28cd774bcadde79966
-M/arch=21|0|ve4|1619579307941|../src/FinalProject.vhd|0*23945*0x5e0aad5bebe598e6223bc90037a0c37f9c7fe9fc|0*25333*0x3666052002612506830c83371aef600f
+M/arch=21|0|ve4|1619581244166|../src/FinalProject.vhd|0*27789*0x29325e8c625e41c67e7ae06e8d19e44fc91583a5|0*29515*0x3666052002612506830c83371aef600f
 R=../src/FinalProject.vhd|6
 Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|174cfe0c89327a1d337b78e0502e440529f190a5695904ed7b0b7deb303727f8baba08bc2abc6b0484fe7a36880a7019
-Version/arch=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|907f1eb2ab5faaca81dadc47e735a03a51974bffc11337f820de5164bfa9aac1
+Version/arch=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|907f1eb2ab5faaca81dadc47e735a03af6094e6dbaaacd4d4d8f2e8996da622c
 
 [finalproject_tb]
 A/tb_architecture=A/TB_ARCHITECTURE 21|../src/Test/finalproject_TB.vhd|12|1*28588

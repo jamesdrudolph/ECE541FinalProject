@@ -54,7 +54,7 @@ architecture arch of FinalProject is
 	signal SqrtRemainder:	std_logic_vector(8 downto 0);	 
 	
 	signal state, nstate: std_logic_vector(4 downto 0) := "00001"; --size may change	 
-	signal count: integer range 0 to 119 := 0;
+	signal count: integer range 0 to 120 := 0;
 	signal training_data: DataArray;
 begin
 	u0 : component embedded_soc
@@ -72,8 +72,31 @@ begin
 		SelectDataIndex		=> IrisIndex,
 		SelectDataOut		=> IrisDataOut
 		);	   
-		
 	
-			
-		
+	process(CLOCK_50)
+	begin
+		if rising_edge(CLOCK_50) then
+			state <= nstate;
+			if state(0) = '1' then 	
+				IrisDataType <= '0';  --state 0 loads training data
+				if count < 120 then 
+					count <= count + 1; 
+					IrisIndex <= to_unsigned(count, 7);
+				else count <= 0;
+				end if;	
+				
+				if count > 0 then
+					training_data(count - 1) <= IrisDataOut; 
+				end if;
+				
+				
+			elsif state(1) = '1' and count < 40 then count <= count + 1;	--may need to change state for this line assume this state is for running through the testing data
+			else count <= 0;	
+			end if;	
+		end if;
+	end process;
+	
+	
+	
+	
 end architecture arch;
