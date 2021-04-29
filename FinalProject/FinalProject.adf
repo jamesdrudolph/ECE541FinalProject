@@ -119,3 +119,9 @@ Test/finalproject_TB_runtest.do=-1
 .\src\Test\finalproject_TB.vhd=VHDL Test Bench
 .\src\Test\finalproject_TB_runtest.do=Macro
 
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
