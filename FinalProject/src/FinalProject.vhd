@@ -53,9 +53,16 @@ architecture arch of FinalProject is
 	signal SqrtResult	:	std_logic_vector(7 downto 0);
 	signal SqrtRemainder:	std_logic_vector(8 downto 0);	 
 	
-	signal state, nstate: std_logic_vector(4 downto 0) := "00001"; --size may change	 
+	signal state, nstate: std_logic_vector(1 downto 0) := "01"; --size may change	 
 	signal count: integer range 0 to 120 := 0;
-	signal training_data: DataArray;
+	signal training_data: DataArray;	 
+	signal wait_count: unsigned(3 downto 0) := (others => '1'); --may need to adjust depending on how long classification takes	 
+	signal wait_zero: unsigned(wait_count'range) := (others => '0');
+	signal test_data: DataAttributes;		 
+	signal classifications: TestClass;	
+	signal knn_out: integer range 0 to 2;
+	
+	
 begin
 	u0 : component embedded_soc
 	port map (
@@ -76,12 +83,13 @@ begin
 	process(CLOCK_50)
 	begin
 		if rising_edge(CLOCK_50) then
-			state <= nstate;
+			state <= nstate; 
+			wait_count <= (others => '1');
 			if state(0) = '1' then 	
-				IrisDataType <= '0';  --state 0 loads training data
+				IrisDataType <= '0';  --state 0 loads training data	   
 				if count < 120 then 
 					count <= count + 1; 
-					IrisIndex <= to_unsigned(count, 7);
+					IrisIndex <= to_unsigned(count + 1, 7);
 				else count <= 0;
 				end if;	
 				
@@ -90,7 +98,18 @@ begin
 				end if;
 				
 				
-			elsif state(1) = '1' and count < 40 then count <= count + 1;	--may need to change state for this line assume this state is for running through the testing data
+			elsif state(1) = '1' then 			 --may need to change state for this line. this state is for running through the testing data
+				IrisDataType <= '1'; -- run through testing data
+				wait_count <= wait_count - 1;  
+				IrisIndex <= to_unsigned(count + 1, 7);
+				test_data <= IrisDataOut;
+				if wait_count = wait_zero then
+					if count < 40 then
+						count <= count + 1;			
+						classifications(count + 1) <= knn_out; -- knn_out is the predicted class of the item. possibly different name;
+					end if;
+					
+				end if;
 			else count <= 0;	
 			end if;	
 		end if;
