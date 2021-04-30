@@ -1,4 +1,4 @@
 MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd" 
 MESSAGE "Compile Entity "knn_class"" 
 MESSAGE "Compile Architecture "arch" of Entity "knn_class"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

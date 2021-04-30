@@ -8,3 +8,4 @@
 .\src\Test\irisdatamanager_TB.vhd
 .\src\Test\sqrt_TB.vhd
 .\src\Test\finalproject_TB.vhd
+.\src\TestBench\knn_class_TB.vhd

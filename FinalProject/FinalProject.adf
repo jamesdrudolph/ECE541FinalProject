@@ -32,6 +32,18 @@ fileopenfolder=C:\Users\nothi\source\repos\FinalProject
 SYNTH_STATUS=none
 IMPL_STATUS=none
 VerilogDirsChanged=0
+AccessACCB=1
+AccessACCR=1
+AccessReadTopLevel=0
+AccessRead=0
+AccessReadWrite=0
+AccessReadWriteSLP=0
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
 
 [IMPLEMENTATION]
 UCF=
@@ -72,6 +84,7 @@ LAST_RUN=1619572760
 [Groups]
 MEGA=1
 Test=1
+TestBench=1
 
 [SpecTracer]
 WindowVisible=0
@@ -104,6 +117,8 @@ Test/irisdatamanager_TB_runtest.do=-1
 Test/sqrt_TB_runtest.do=-1
 Test/finalproject_TB.vhd=-1
 Test/finalproject_TB_runtest.do=-1
+TestBench/knn_class_TB.vhd=-1
+TestBench/knn_class_TB_runtest.do=-1
 
 [Files.Data]
 .\src\Common.vhd=VHDL Source Code
@@ -129,3 +144,5 @@ Test/finalproject_TB_runtest.do=-1
 .\src\Test\finalproject_TB.vhd=VHDL Test Bench
 .\src\Test\finalproject_TB_runtest.do=Macro
 
+.\src\TestBench\knn_class_TB.vhd=VHDL Test Bench
+.\src\TestBench\knn_class_TB_runtest.do=Macro
