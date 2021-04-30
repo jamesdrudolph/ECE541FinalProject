@@ -1,13 +1,13 @@
-timestamp=1619799870510
+timestamp=1619800083067
 
 [~A]
-ModifyID=63
+ModifyID=64
 Version=74
 
 [~MFT]
-0=10|0FinalProject.mgf|94270|63337
-1=4|1FinalProject.mgf|194345|158841
-3=2|3FinalProject.mgf|48524|42444
+0=8|0FinalProject.mgf|95986|65206
+1=2|1FinalProject.mgf|194803|162947
+3=2|3FinalProject.mgf|49754|44229
 
 [common]
 E=1*74125
@@ -82,15 +82,15 @@ Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|869
 Version/tb_architecture=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beaed62d67956572edb53d39c74be7c5280
 
 [knn_class]
-A/arch=21|../src/knn_class.vhd|17|1*181367
-BinI32/arch=3*46739
+A/arch=21|../src/knn_class.vhd|17|1*194803
+BinI32/arch=3*49754
 I=0*58400
-I/arch=0*90924
+I/arch=0*95986
 M=11|0|ve4|1619792953091|../src/knn_class.vhd|0*57935*0x483ab957a9e03c0e12db72374611db4caee9743a|0*58317*0xd986fd7175c8cf28cd774bcadde79966
-M/arch=21|0|ve4|1619799687100|../src/knn_class.vhd|0*89376*0xfc2434505eb91a40b674ccb8b86da5eb741f8d66|0*90833*0x3666052002612506830c83371aef600f
+M/arch=21|0|ve4|1619800083056|../src/knn_class.vhd|0*94438*0xa87110b5ab19acdf1fae9565b5bb3b5ca7aa73e1|0*95895*0x3666052002612506830c83371aef600f
 R=../src/knn_class.vhd|6
 Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|9903b96fe8f9819d4c4c49854ec71ba9486e58ba119ad2ce997f4e6f54a40fddacd0a6c6c4ec7310aef5ec049aaf146a
-Version/arch=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|907f1eb2ab5faaca81dadc47e735a03aba45daac73bb39ac0b3c5e98ef5a1ebb
+Version/arch=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|907f1eb2ab5faaca81dadc47e735a03aef6f8a648285028d7d13482b5156b185
 
 [knn_class_tb]
 A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/knn_class_TB.vhd|12|1*190138
