@@ -74,7 +74,7 @@ architecture arch of FinalProject is
 	signal done_k: std_logic;
 	signal kData: DataSlice;
 	signal min_dists: distarr(1 to 5);
-	type distarr_array is array(0 to 2) of distarr(1 to 5);
+	
 	signal mins: distarr_array;		 
 	constant data_offset: integer := 40;	
 	signal offset_count: integer range 0 to 2 := 0;	 

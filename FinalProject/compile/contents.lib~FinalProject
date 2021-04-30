@@ -1,4 +1,6 @@
-67
+72
+~E 1 "../src/classifer.vhd" 6 classifier
+~A 1 "../src/classifer.vhd" 16 arch
 ~E 1 "../src/EuclideanDistance.vhd" 6 EuclideanDistance
 ~A 1 "../src/EuclideanDistance.vhd" 15 arch
 ~E 1 "../src/Test/euclideandistance_TB.vhd" 9 euclideandistance_tb

@@ -3,6 +3,7 @@
 .\src\IrisDataManager.vhd
 .\src\FinalProject.vhd
 .\src\knn_class.vhd
+.\src\classifer.vhd
 .\MEGA\sqrt.vhd
 .\src\Test\euclideandistance_TB.vhd
 .\src\Test\irisdatamanager_TB.vhd

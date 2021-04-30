@@ -9,5 +9,6 @@ package Common is
 	type DataSlice is array(1 to 40) of DataAttributes;		
 	type classarr is array(natural range <>) of integer range 0 to 2;	
 	type distarr is array(natural range <>) of unsigned(7 downto 0);
-	type std_array is array(1 to 40) of std_logic_vector(7 downto 0);
+	type std_array is array(1 to 40) of std_logic_vector(7 downto 0);  
+	type distarr_array is array(0 to 2) of distarr(1 to 5);
 end Common;
