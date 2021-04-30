@@ -8,7 +8,8 @@ entity knn_class is
 		CLK			:	in	std_logic;							   -- This uses 40 training values at a time in the order then appear in IrisDataManager
 		TrainingData:	in	DataSlice;							   -- Thus the class of each training data point is the same so it need not be output
 		TestData	:	in	DataAttributes;			  
-		min_dists	:	out distarr(1 to 5)
+		min_dists	:	out distarr(1 to 5);
+		done		: 	out std_logic
 		);
 end entity knn_class;					 
 
@@ -25,8 +26,8 @@ architecture arch of knn_class is
 	
 	signal dist_std: std_array;
 	signal dist_un: distarr(1 to 40); 
-	signal dist1: distarr(1 to 20);
-	signal dist2: distarr(1 to 10);
+	signal comp: std_logic_vector(1 to 39);
+	constant done_const: std_logic_vector(1 to 39) := (others => '1');
 	
 	
 begin
@@ -37,40 +38,23 @@ begin
 		dist_un(i) <= unsigned(dist_std(i));
 	end generate;
 	
-	d1: for j in 1 to 20 generate
-		process(dist_un)
-		begin
-			if dist_un(2 * j - 1) > dist_un(2 * j) then
-				dist1(j) <= dist_un(2 * j);
-			else
-				dist1(j) <= dist_un(2 * j - 1);	 
+	
+	d1: for j in 1 to 39 generate
+		process(clk)
+		begin  
+			if rising_edge(clk) then
+				if dist_un(j) > dist_un(j + 1) then
+					dist_un(j) <= dist_un(j + 1);
+					dist_un(j + 1) <= dist_un(j);	
+					comp(j) <= '0';
+				else
+					comp(j) <= '1';
+				end if;
 			end if;
 		end process;
-	end generate;	
+	end generate;		
 	
-	d2: for n in 1 to 10 generate
-		process(dist1)
-		begin
-			if dist1(2 * n - 1) > dist1(2 * n) then
-				dist2(n) <= dist1(2 * n);
-			else
-				dist2(n) <= dist1(2 * n - 1);
-			end if;
-		end process;
-	end generate;
-	
-	d3: for m in 1 to 5 generate
-		process(dist2)
-		begin
-			if dist2(2 * m - 1) > dist2(2 * m) then
-				min_dists(m) <= dist2(2 * m);
-			else
-				min_dists(m) <= dist2(2 * m - 1);
-			end if;
-		end process;
-	end generate;
-	
-	
-	
+	min_dists <= dist_un(1 to 5);				   
+	done <= '1' when comp = done_const else '0';
 	
 end architecture;
