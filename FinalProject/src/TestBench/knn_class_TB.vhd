@@ -78,7 +78,7 @@ architecture TB_ARCHITECTURE of knn_class_tb is
 	type intarr5 is array(1 to 5) of integer;
 	signal result: intarr5;		
 	
-	constant correct1: intarr5 := (1, 2, 2, 2, 3);
+	constant correct1: intarr5 := (1, 1, 1, 2, 2);
 	constant correct2: intarr5 := (46, 47, 47, 47, 48);
 begin
 	

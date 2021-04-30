@@ -5,7 +5,7 @@ test = [50,35,13,3];
 trainingdata = A(1:40, :);
 dists = zeros(1, 40);
 for i = 1:40
-    dists(i) = round(norm(test - trainingdata(i, :)));
+    dists(i) = floor(norm(test - trainingdata(i, :)));
 end
 
 dists = sort(dists);
@@ -16,7 +16,7 @@ test = [72, 30, 58, 16];
 dists = zeros(1, 40);
 
 for i = 1:40
-    dists(i) = round(norm(test - trainingdata(i, :)));
+    dists(i) = floor(norm(test - trainingdata(i, :)));
 end
 
 dists = sort(dists);

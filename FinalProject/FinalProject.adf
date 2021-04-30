@@ -106,6 +106,8 @@ Selected=
 /euclideandistance_tb.asdb=-1
 /euclideandistance_tb.awc=-1
 /knn_class.vhd=-1
+/knn.asdb=-1
+/knn.awc=-1
 MEGA/..\..\MEGA\sqrt.vhd=-1
 MEGA/..\..\MEGA\sqrt_inst.vhd=-1
 MEGA/..\..\MEGA\sqrt.cmp=-1
@@ -132,6 +134,8 @@ TestBench/knn_class_TB_runtest.do=-1
 .\src\euclideandistance_tb.asdb=Accelerated Waveform File
 .\src\euclideandistance_tb.awc=Accelerated Waveform Configuration
 .\src\knn_class.vhd=VHDL Source Code
+.\src\knn.asdb=Accelerated Waveform File
+.\src\knn.awc=Accelerated Waveform Configuration
 .\MEGA\sqrt.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt_inst.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt.cmp=EXTERNAL FILE
@@ -143,6 +147,6 @@ TestBench/knn_class_TB_runtest.do=-1
 .\src\Test\sqrt_TB_runtest.do=Macro
 .\src\Test\finalproject_TB.vhd=VHDL Test Bench
 .\src\Test\finalproject_TB_runtest.do=Macro
-
 .\src\TestBench\knn_class_TB.vhd=VHDL Test Bench
 .\src\TestBench\knn_class_TB_runtest.do=Macro
+
