@@ -40,7 +40,16 @@ architecture arch of FinalProject is
 			);
 	end component EuclideanDistance;
 	
-	
+	component knn_class is
+		port (
+			CLK			:	in	std_logic;							   
+			TrainingData:	in	DataSlice;							   
+			TestData	:	in	DataAttributes;
+			rst			:	in 	std_logic;
+			min_dists	:	out distarr(1 to 5);
+			done		: 	out std_logic
+			);
+	end component knn_class;
 	
 	
 	signal LEDR_export	:	std_logic_vector(9 downto 0);
@@ -53,14 +62,23 @@ architecture arch of FinalProject is
 	signal SqrtResult	:	std_logic_vector(7 downto 0);
 	signal SqrtRemainder:	std_logic_vector(8 downto 0);	 
 	
-	signal state, nstate: std_logic_vector(1 downto 0) := "01"; --size may change	 
+	signal state, nstate: std_logic_vector(2 downto 0) := "001"; --size may change	 
 	signal count: integer range 0 to 120 := 0;
 	signal training_data: DataArray;	 
-	signal wait_count: unsigned(3 downto 0) := (others => '1'); --may need to adjust depending on how long classification takes	 
+	signal wait_count: unsigned(2 downto 0) := (others => '1'); --may need to adjust depending on how long classification takes	 
 	signal wait_zero: unsigned(wait_count'range) := (others => '0');
 	signal test_data: DataAttributes;		 
 	signal classifications: TestClass;	
-	signal knn_out: integer range 0 to 2;
+	signal knn_out: integer range 0 to 2;	  
+	signal rst_k: std_logic;
+	signal done_k: std_logic;
+	signal kData: DataSlice;
+	signal min_dists: distarr(1 to 5);
+	type distarr_array is array(0 to 2) of distarr(1 to 5);
+	signal mins: distarr_array;		 
+	constant data_offset: integer := 40;	
+	signal offset_count: integer range 0 to 2 := 0;	 
+	signal offset: integer range 0 to 80;
 	
 	
 begin
@@ -78,7 +96,24 @@ begin
 		SelectDataType		=> IrisDataType,
 		SelectDataIndex		=> IrisIndex,
 		SelectDataOut		=> IrisDataOut
-		);	   
+		);	  
+	
+	k1 : component knn_class
+	port map (
+		clk					=> CLOCK_50,
+		TrainingData		=> kData,							   
+		TestData			=> test_data,
+		rst					=> rst_k,
+		min_dists			=> min_dists,
+		done				=> done_k
+		);
+	
+	offset <= data_offset * offset_count;	
+	s1: for i in 1 to 40 generate
+		kData(i) <= training_data(i - 1 + offset);
+	end generate;
+	
+	mins(offset_count) <= min_dists;		  --still need something to calculate the class based on this
 	
 	process(CLOCK_50)
 	begin
@@ -99,8 +134,17 @@ begin
 				
 				
 			elsif state(1) = '1' then 			 --may need to change state for this line. this state is for running through the testing data
-				IrisDataType <= '1'; -- run through testing data
-				wait_count <= wait_count - 1;  
+				IrisDataType <= '1'; -- run through testing data	
+				
+				if done_k = '1' then
+					wait_count <= wait_count - 1; 
+					if offset_count < 2 then
+						offset_count <= offset_count + 1;
+					else
+						offset_count <= 0;
+					end if;
+				end if;
+				
 				IrisIndex <= to_unsigned(count + 1, 7);
 				test_data <= IrisDataOut;
 				if wait_count = wait_zero then
@@ -113,7 +157,29 @@ begin
 			else count <= 0;	
 			end if;	
 		end if;
+	end process; 
+	
+	process(state, count)
+	begin	
+		nstate <= (others => '0');
+		case state is
+			when "001" =>						   -- state 0 loads training data
+				if count = 120 then
+					nstate(1) <= '1';
+				else
+					nstate(0) <= '1';
+			end if;
+			when "010" =>							-- state 2\1 goes through testing data and classifies
+				if count = 40 then
+					nstate(2) <= '1';
+				else
+					nstate(1) <= '1';
+			end if;									-- state 3 still being developed. perhaps wait for console input
+			when others => 
+			nstate(0) <= '1';
+		end case;
 	end process;
+	
 	
 	
 	
