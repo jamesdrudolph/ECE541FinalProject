@@ -2,6 +2,7 @@
 .\src\EuclideanDistance.vhd
 .\src\IrisDataManager.vhd
 .\src\FinalProject.vhd
+.\src\knn_class.vhd
 .\MEGA\sqrt.vhd
 .\src\Test\euclideandistance_TB.vhd
 .\src\Test\irisdatamanager_TB.vhd

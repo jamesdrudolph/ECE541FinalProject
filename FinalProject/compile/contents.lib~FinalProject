@@ -1,4 +1,4 @@
-18
+26
 ~E 1 "../src/EuclideanDistance.vhd" 6 EuclideanDistance
 ~A 1 "../src/EuclideanDistance.vhd" 15 arch
 ~E 1 "../src/Test/euclideandistance_TB.vhd" 9 euclideandistance_tb
@@ -11,6 +11,8 @@
 ~A 1 "../src/IrisDataManager.vhd" 15 arch
 ~E 1 "../src/Test/irisdatamanager_TB.vhd" 9 irisdatamanager_tb
 ~A 1 "../src/Test/irisdatamanager_TB.vhd" 12 TB_ARCHITECTURE
+~E 1 "../src/knn_class.vhd" 6 knn_class
+~A 1 "../src/knn_class.vhd" 15 arch
 ~E 1 "../MEGA/sqrt.vhd" 43 sqrt
 ~A 1 "../MEGA/sqrt.vhd" 54 SYN
 ~E 1 "../src/Test/sqrt_TB.vhd" 6 sqrt_tb

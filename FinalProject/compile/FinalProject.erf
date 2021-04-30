@@ -1,5 +1,4 @@
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 
-MESSAGE "Compile Entity "FinalProject"" 
-MESSAGE "Compile Architecture "arch" of Entity "FinalProject"" 
-WARNING ELAB1_0026: "There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found)." "C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 67 0
-SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  1.0 [s]" 
+MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd" 
+MESSAGE "Compile Entity "knn_class"" 
+MESSAGE "Compile Architecture "arch" of Entity "knn_class"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 

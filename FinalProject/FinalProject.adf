@@ -73,6 +73,14 @@ LAST_RUN=1619572760
 MEGA=1
 Test=1
 
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
 /Common.vhd=-1
 /EuclideanDistance.vhd=-1
@@ -84,6 +92,7 @@ Test=1
 /irisdatamanager_tb.awc=-1
 /euclideandistance_tb.asdb=-1
 /euclideandistance_tb.awc=-1
+/knn_class.vhd=-1
 MEGA/..\..\MEGA\sqrt.vhd=-1
 MEGA/..\..\MEGA\sqrt_inst.vhd=-1
 MEGA/..\..\MEGA\sqrt.cmp=-1
@@ -107,6 +116,7 @@ Test/finalproject_TB_runtest.do=-1
 .\src\irisdatamanager_tb.awc=Accelerated Waveform Configuration
 .\src\euclideandistance_tb.asdb=Accelerated Waveform File
 .\src\euclideandistance_tb.awc=Accelerated Waveform Configuration
+.\src\knn_class.vhd=VHDL Source Code
 .\MEGA\sqrt.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt_inst.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt.cmp=EXTERNAL FILE
@@ -119,9 +129,3 @@ Test/finalproject_TB_runtest.do=-1
 .\src\Test\finalproject_TB.vhd=VHDL Test Bench
 .\src\Test\finalproject_TB_runtest.do=Macro
 
-[SpecTracer]
-WindowVisible=0
-[HierarchyViewer]
-HierarchyInformation=
-ShowHide=ShowTopLevel
-Selected=

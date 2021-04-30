@@ -1,0 +1,264 @@
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0015: Common.vhd : (8, 34): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0015: Common.vhd : (9, 22): '(' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0031: Common.vhd : (9, 36): Simple expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0049: Common.vhd : (9, 32): Syntax error in expression.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0268: Common.vhd : (9, 23): Missing index range constraint.
+# Error: COMP96_0015: Common.vhd : (9, 23): ')' expected.
+# Error: COMP96_0019: Common.vhd : (9, 23): Keyword 'of' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Error: COMP96_0015: knn_class.vhd : (13, 3): ';' expected.
+# Error: COMP96_0111: knn_class.vhd : (15, 12): Labels do not match.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Error: COMP96_0111: knn_class.vhd : (15, 12): Labels do not match.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Error: COMP96_0300: knn_class.vhd : (13, 30): Cannot reference "k" until the interface list is complete.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0015: Common.vhd : (12, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Error: COMP96_0078: Common.vhd : (11, 38): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: Common.vhd : (11, 38): Unknown type.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Error: COMP96_0018: knn_class.vhd : (12, 3): Identifier expected.
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0015: knn_class.vhd : (35, 7): ';' expected.
+# Error: COMP96_0019: knn_class.vhd : (35, 7): Keyword 'end' expected.
+# Error: COMP96_0015: knn_class.vhd : (37, 6): ';' expected.
+# Error: COMP96_0016: knn_class.vhd : (37, 14): Design unit declaration expected.
+# Error: COMP96_0018: knn_class.vhd : (75, 17): Identifier expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0015: knn_class.vhd : (35, 7): ';' expected.
+# Error: COMP96_0019: knn_class.vhd : (35, 7): Keyword 'end' expected.
+# Error: COMP96_0015: knn_class.vhd : (37, 6): ';' expected.
+# Error: COMP96_0016: knn_class.vhd : (37, 14): Design unit declaration expected.
+# Error: COMP96_0018: knn_class.vhd : (75, 17): Identifier expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0363: knn_class.vhd : (35, 3): Component instantiation statement must have a label.
+# Error: COMP96_0015: knn_class.vhd : (35, 4): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0363: knn_class.vhd : (35, 3): Component instantiation statement must have a label.
+# Error: COMP96_0015: knn_class.vhd : (35, 4): ';' expected.
+# Error: COMP96_0019: knn_class.vhd : (36, 3): Keyword 'end' expected.
+# Error: COMP96_0015: knn_class.vhd : (38, 6): ';' expected.
+# Error: COMP96_0016: knn_class.vhd : (38, 14): Design unit declaration expected.
+# Error: COMP96_0018: knn_class.vhd : (76, 17): Identifier expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0363: knn_class.vhd : (35, 3): Component instantiation statement must have a label.
+# Error: COMP96_0015: knn_class.vhd : (35, 4): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0078: knn_class.vhd : (36, 44): Unknown identifier "distance".
+# Error: COMP96_0149: knn_class.vhd : (37, 26): Explicit type conversions are allowed between closely related types only.
+# Warning: COMP96_0367: knn_class.vhd : (37, 17): Improper array length (40). Expected length is 8.
+# Error: COMP96_0078: knn_class.vhd : (41, 11): Unknown identifier "distance".
+# Error: COMP96_0348: knn_class.vhd : (41, 11): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: knn_class.vhd : (43, 7): Unknown identifier "distance".
+# Error: COMP96_0078: knn_class.vhd : (43, 29): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (43, 7): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (43, 7): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (43, 7): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: knn_class.vhd : (44, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (44, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (44, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (44, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (46, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (46, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (46, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (46, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (54, 36): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (54, 36): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (54, 32): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 23): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 32 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0149: knn_class.vhd : (37, 26): Explicit type conversions are allowed between closely related types only.
+# Warning: COMP96_0367: knn_class.vhd : (37, 17): Improper array length (40). Expected length is 8.
+# Error: COMP96_0078: knn_class.vhd : (41, 11): Unknown identifier "distance".
+# Error: COMP96_0348: knn_class.vhd : (41, 11): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: knn_class.vhd : (43, 7): Unknown identifier "distance".
+# Error: COMP96_0078: knn_class.vhd : (43, 29): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (43, 7): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (43, 7): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (43, 7): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: knn_class.vhd : (44, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (44, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (44, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (44, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (46, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (46, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (46, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (46, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (54, 36): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (54, 36): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (54, 32): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 23): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 31 Errors 1 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0149: knn_class.vhd : (37, 26): Explicit type conversions are allowed between closely related types only.
+# Warning: COMP96_0367: knn_class.vhd : (37, 17): Improper array length (40). Expected length is 8.
+# Error: COMP96_0078: knn_class.vhd : (43, 7): Unknown identifier "distance".
+# Error: COMP96_0078: knn_class.vhd : (43, 29): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (43, 7): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (43, 7): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (43, 7): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: knn_class.vhd : (44, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (44, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (44, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (44, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (46, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (46, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (46, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (46, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (54, 36): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (54, 36): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (54, 32): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 23): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 29 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# Error: COMP96_0078: knn_class.vhd : (44, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (44, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (44, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (44, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (46, 17): Unknown identifier "distance".
+# Error: COMP96_0133: knn_class.vhd : (46, 17): Cannot find object declaration.
+# Error: COMP96_0289: knn_class.vhd : (46, 17): Prefix of index must be an array.
+# Error: COMP96_0077: knn_class.vhd : (46, 17): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Error: COMP96_0078: knn_class.vhd : (54, 36): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (54, 36): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (54, 32): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (55, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (55, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (55, 23): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 11): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 11): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 11): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: knn_class.vhd : (57, 27): Unknown identifier "j".
+# Error: COMP96_0133: knn_class.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0138: knn_class.vhd : (57, 23): The index types in the reference to the array object are incompatible with its range type.
+# Compile failure 23 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/knn_class.vhd
+# File: C:/Users/
