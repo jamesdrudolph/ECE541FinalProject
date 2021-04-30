@@ -30,7 +30,7 @@ begin
 		end if;
 	end process;
 	
-	process(mins, rst)
+	process(clk, rst)
 	begin
 		if rst = '1' then
 			count0 <= 0;
@@ -39,10 +39,15 @@ begin
 			round <= 1;
 		elsif rising_edge(clk) then
 			--need to make acutally sequential so it counts properly 
-			done <= '1';
-			if round < 5 then
-				round <= round + 1;
+			case round is
+				when 5 =>
+				done <= '1';
+				when others => 
 				done <= '0';
+			end case;
+			
+			if round < 5 then
+				round <= round + 1;	
 			end if;
 			
 			if count0 + count1 + count2 < 5 then	  

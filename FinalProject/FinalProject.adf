@@ -109,6 +109,8 @@ Selected=
 /knn.asdb=-1
 /knn.awc=-1
 /classifer.vhd=-1
+/classifier.asdb=-1
+/classifier.awc=-1
 MEGA/..\..\MEGA\sqrt.vhd=-1
 MEGA/..\..\MEGA\sqrt_inst.vhd=-1
 MEGA/..\..\MEGA\sqrt.cmp=-1
@@ -122,6 +124,8 @@ Test/finalproject_TB.vhd=-1
 Test/finalproject_TB_runtest.do=-1
 TestBench/knn_class_TB.vhd=-1
 TestBench/knn_class_TB_runtest.do=-1
+TestBench/classifier_TB.vhd=-1
+TestBench/classifier_TB_runtest.do=-1
 
 [Files.Data]
 .\src\Common.vhd=VHDL Source Code
@@ -138,6 +142,8 @@ TestBench/knn_class_TB_runtest.do=-1
 .\src\knn.asdb=Accelerated Waveform File
 .\src\knn.awc=Accelerated Waveform Configuration
 .\src\classifer.vhd=VHDL Source Code
+.\src\classifier.asdb=Accelerated Waveform File
+.\src\classifier.awc=Accelerated Waveform Configuration
 .\MEGA\sqrt.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt_inst.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt.cmp=EXTERNAL FILE
@@ -151,4 +157,6 @@ TestBench/knn_class_TB_runtest.do=-1
 .\src\Test\finalproject_TB_runtest.do=Macro
 .\src\TestBench\knn_class_TB.vhd=VHDL Test Bench
 .\src\TestBench\knn_class_TB_runtest.do=Macro
+.\src\TestBench\classifier_TB.vhd=VHDL Test Bench
+.\src\TestBench\classifier_TB_runtest.do=Macro
 

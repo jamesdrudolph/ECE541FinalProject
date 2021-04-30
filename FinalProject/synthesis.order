@@ -6,3 +6,4 @@ i<>.\MEGA\sqrt.vhd
 i<>.\src\knn_class.vhd
 i<>.\src\TestBench\knn_class_TB.vhd
 i<>.\src\classifer.vhd
+i<>.\src\TestBench\classifier_TB.vhd

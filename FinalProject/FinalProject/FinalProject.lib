@@ -1,24 +1,35 @@
-timestamp=1619813638593
+timestamp=1619815750885
 
 [~A]
-ModifyID=72
+ModifyID=83
 Version=74
 
 [~MFT]
-0=8|0FinalProject.mgf|117098|83005
-1=2|1FinalProject.mgf|263255|225188
-3=2|3FinalProject.mgf|61914|53682
+0=10|0FinalProject.mgf|131553|94222
+1=4|1FinalProject.mgf|288631|246677
+3=2|3FinalProject.mgf|67633|58058
 
 [classifier]
-A/arch=21|../src/classifer.vhd|16|1*263255
-BinI32/arch=3*61914
+A/arch=21|../src/classifer.vhd|16|1*281908
+BinI32/arch=3*66290
 I=0*114690
-I/arch=0*117098
+I/arch=0*129055
 M=11|0|ve4|1619812279973|../src/classifer.vhd|0*114261*0x6dcc828f9416c17d58567121df9154292b421487|0*114606*0xd986fd7175c8cf28cd774bcadde79966
-M/arch=21|0|ve4|1619813638584|../src/classifer.vhd|0*116214*0xbb544cc45ad942ce586ab1eb0872fdfab91e4b9a|0*117006*0x3666052002612506830c83371aef600f
+M/arch=21|0|ve4|1619815675140|../src/classifer.vhd|0*128145*0x33221695fecc4680e3f5bade01447f2670005607|0*128963*0x3666052002612506830c83371aef600f
 R=../src/classifer.vhd|6
 Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|4b27e5a5fc5e26cd25ac9d8dbd1eb3d2151de3b87d79102a088dc0b86e3f869498d77fedb610d8537dac185c7d5c0002
-Version/arch=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|907f1eb2ab5faaca81dadc47e735a03a5fe424f6b1d86edd997b15a7fb7ef3ec
+Version/arch=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|907f1eb2ab5faaca81dadc47e735a03a5ac2858c420c5a32f69bd70d5804e3f8
+
+[classifier_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/classifier_TB.vhd|13|1*286257
+BinI32/tb_architecture=3*67633
+I=0*117883
+I/tb_architecture=I/TB_ARCHITECTURE 0*131221
+M=11|0|ve4|1619814992888|../src/TestBench/classifier_TB.vhd|0*117513*0xedc574fc4d14173c279480a057fc2126a7d6139e|0*117782*0xd986fd7175c8cf28cd774bcadde79966
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve4|1619815750874|../src/TestBench/classifier_TB.vhd|0*129840*0x325189897b42e8b6379518acd1f6ba9cb5e36221|0*131101*0x3666052002612506830c83371aef600f
+R=../src/TestBench/classifier_TB.vhd|10
+Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|7d0e4b5e105f702ff85388fcafb09b860998a85b3152aef221c66d900b1836c8529f5324bdb27fdf57833da9a5a33e56
+Version/tb_architecture=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beadc30d4a07fc0e2e08708417c92522c36
 
 [common]
 E=1*217333
@@ -136,6 +147,14 @@ R=../src/Test/sqrt_TB.vhd|6
 Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|1baea12b3eb78650ebc4dd9bb3e1f15426527262ddaa47cb266f3a3c4d9b973a7f1f981f7013055cebce5910ac74398c
 Version/tb_architecture=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea2c359b9ff0e0da0fba187d52484d5f7d
 
+[testbench_for_classifier]
+Configures=classifier_tb.TB_ARCHITECTURE
+E=1*288631
+I=0*131553
+M=2|0|ve4|1619815750880|../src/TestBench/classifier_TB.vhd|0*122091*0xde05c32eb3319dd2bf1a21733f41d4b3d9ffe47c|0*122396*0x3666052002612506830c83371aef600f
+R=../src/TestBench/classifier_TB.vhd|82
+Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|5efd636a07bb57613e35fadc81a5c3e53ef71f859de8aef46b4bb0f58b047d965af3c42593d94d41b8f776d95f5eaf98836c7f392a65a8e542a4d597b0d1313a
+
 [testbench_for_euclideandistance]
 Configures=euclideandistance_tb.TB_ARCHITECTURE
 E=1*250282
@@ -178,6 +197,7 @@ Version=11.1.263.7352 (Windows)|0000000a789cd34d494a57d0353230b000000ec20272|5ef
 
 [~U]
 classifier=11|0*114005|
+classifier_tb=11|0*117381|
 common=Common 3|0*102928|0*103250
 euclideandistance=EuclideanDistance 11|0*13016|
 euclideandistance_tb=11|0*15396|
@@ -189,6 +209,7 @@ knn_class=11|0*57672|
 knn_class_tb=11|0*45166|
 sqrt=11|0*10348|
 sqrt_tb=11|0*0|
+testbench_for_classifier=TESTBENCH_FOR_classifier 2||
 testbench_for_euclideandistance=TESTBENCH_FOR_euclideandistance 2||
 testbench_for_finalproject=TESTBENCH_FOR_finalproject 2||
 testbench_for_irisdatamanager=TESTBENCH_FOR_irisdatamanager 2||
