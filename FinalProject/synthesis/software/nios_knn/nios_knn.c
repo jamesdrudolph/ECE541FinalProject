@@ -5,6 +5,7 @@
  *      Author: nothi
  */
 #include <stdio.h>
+#include <stdlib.h>
 
 //LEDS -> 10 bit output @ 0x21040
 uint *leds = (uint*)0x21040;
@@ -35,9 +36,35 @@ void printClassificationResult() {
 	printf("Actual: %s\nClassified as: %s\n\n", resolveToFlower(actual), resolveToFlower(classified));
 }
 
+int* getAttributesFromUser() {
+    static char strs[][16] = { "Sepal length", "Sepal width", "Petal length", "Petal width" };
+    static int attributes[4];
+
+    printf("An Iris flower can be described using 4 attributes: sepal length and width, and petal length and width.\nPlease enter the 4 attributes in millimeters between 0 and 255.\n\n");
+
+    for (int i = 0; i < 4; i++) {
+        printf("%s: ", strs[i]);
+
+        char buf[4];
+        fgets(buf, 4, stdin);
+        printf("You entered: %s\n", buf);
+        attributes[i] = atoi(buf);
+    }
+
+    return attributes;
+}
+
 int main()
 {
-  printClassificationResult();
+	int *a = getAttributesFromUser();
 
-  return 0;
+	for (int i = 0; i < 4; i++) {
+		*(nios_output + i) = (char)*(a + i);
+	}
+
+	for (int i = 0; i < 4; i++) {
+		printf("%u: %c\n", nios_output + i, *(nios_output + i));
+	}
+
+	return 0;
 }
