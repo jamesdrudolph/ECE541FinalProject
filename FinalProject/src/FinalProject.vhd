@@ -113,7 +113,7 @@ begin
 		kData(i) <= training_data(i - 1 + offset);
 	end generate;
 	
-	mins(offset_count) <= min_dists;		  --still need something to calculate the class based on this
+	mins(offset_count) <= min_dists;		  
 	
 	process(CLOCK_50)
 	begin
@@ -131,18 +131,21 @@ begin
 				if count > 0 then
 					training_data(count - 1) <= IrisDataOut; 
 				end if;
+				rst_k <= '1';
 				
 				
 			elsif state(1) = '1' then 			 --may need to change state for this line. this state is for running through the testing data
 				IrisDataType <= '1'; -- run through testing data	
-				
+				rst_k <= '0';
 				if done_k = '1' then
 					wait_count <= wait_count - 1; 
 					if offset_count < 2 then
 						offset_count <= offset_count + 1;
 					else
 						offset_count <= 0;
-					end if;
+					end if;		 
+					mins(offset_count) <= min_dists;
+					rst_k <= '1';
 				end if;
 				
 				IrisIndex <= to_unsigned(count + 1, 7);
