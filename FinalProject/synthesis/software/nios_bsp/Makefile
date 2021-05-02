@@ -101,7 +101,7 @@ ACDS_VERSION := 19.1
 # BUILD_NUMBER: 670
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := c:/My_Designs/FinalProject/FinalProject/synthesis/embedded_soc.sopcinfo
+SOPC_FILE := C:/My_Designs/FinalProject/FinalProject/synthesis/embedded_soc.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

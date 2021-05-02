@@ -18,14 +18,17 @@ entity FinalProject is
 		);
 end entity FinalProject;
 
-architecture arch of FinalProject is
-	component embedded_soc is
+architecture arch of FinalProject is	
+		component embedded_soc is
 		port (
-			clk_clk       	: in  std_logic                    := 'X'; 				-- clk
-			reset_reset_n 	: in  std_logic                    := 'X'; 				-- reset_n
-			led_export    	: out std_logic_vector(9 downto 0);        				-- export
-			switches_export	: in  std_logic_vector(9 downto 0) := (others => 'X')	-- export
-			);
+			clk_clk            : in  std_logic                     := 'X';             -- clk
+			led_export         : out std_logic_vector(9 downto 0);                     -- export
+			reset_reset_n      : in  std_logic                     := 'X';             -- reset_n
+			switches_export    : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- export
+			buttons_export     : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			nios_input_export  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			nios_output_export : out std_logic_vector(31 downto 0)                     -- export
+		);
 	end component embedded_soc;
 	
 	component IrisDataManager is
@@ -69,6 +72,8 @@ architecture arch of FinalProject is
 	
 	
 	signal LEDR_export	:	std_logic_vector(9 downto 0);
+	signal nios_input_export : std_logic_vector(31 downto 0);
+	signal nios_output_export : std_logic_vector(31 downto 0);
 	
 	signal IrisDataType	:	std_logic;
 	signal IrisDataOut	:	DataAttributes;
@@ -99,13 +104,17 @@ architecture arch of FinalProject is
 	--signal class_out: integer range 0 to 2;
 	
 begin
+		
 	u0 : component embedded_soc
 	port map (
-		clk_clk       		=> CLOCK_50,	-- clk.clk
-		reset_reset_n 		=> KEY(0),		-- reset.reset_n
-		led_export    		=> LEDR_export,	-- led.export
-		switches_export 	=> SW			-- switches.export
-		);
+		clk_clk            => CLOCK_50,            --         clk.clk
+		led_export         => LEDR_export,         --         led.export
+		reset_reset_n      => KEY(0),      --       reset.reset_n
+		switches_export    => SW,    --    switches.export
+		buttons_export     => KEY,     --     buttons.export
+		nios_input_export  => nios_input_export,  --  nios_input.export
+		nios_output_export => nios_output_export  -- nios_output.export
+	);
 	
 	u1 : component IrisDataManager
 	port map (

@@ -84,9 +84,13 @@ ACDS_VERSION := 19.1
 # used to generate this makefile. 
 # BUILD_NUMBER: 670
 
+# Quartus Generated JDI File. Required for resolving node instance ID's with 
+# design component names. 
+JDI_FILE := C:/My_Designs/FinalProject/FinalProject/synthesis/FinalProject.jdi
+
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := c:/My_Designs/FinalProject/FinalProject/synthesis/embedded_soc.sopcinfo
+SOPCINFO_FILE := C:/My_Designs/FinalProject/FinalProject/synthesis/embedded_soc.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false

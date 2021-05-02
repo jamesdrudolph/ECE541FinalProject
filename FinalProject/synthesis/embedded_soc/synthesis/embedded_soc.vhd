@@ -8,10 +8,13 @@ use IEEE.numeric_std.all;
 
 entity embedded_soc is
 	port (
-		clk_clk         : in  std_logic                    := '0';             --      clk.clk
-		led_export      : out std_logic_vector(9 downto 0);                    --      led.export
-		reset_reset_n   : in  std_logic                    := '0';             --    reset.reset_n
-		switches_export : in  std_logic_vector(9 downto 0) := (others => '0')  -- switches.export
+		buttons_export     : in  std_logic_vector(3 downto 0)  := (others => '0'); --     buttons.export
+		clk_clk            : in  std_logic                     := '0';             --         clk.clk
+		led_export         : out std_logic_vector(9 downto 0);                     --         led.export
+		nios_input_export  : in  std_logic_vector(31 downto 0) := (others => '0'); --  nios_input.export
+		nios_output_export : out std_logic_vector(31 downto 0);                    -- nios_output.export
+		reset_reset_n      : in  std_logic                     := '0';             --       reset.reset_n
+		switches_export    : in  std_logic_vector(9 downto 0)  := (others => '0')  --    switches.export
 	);
 end entity embedded_soc;
 
@@ -101,6 +104,39 @@ architecture rtl of embedded_soc is
 		);
 	end component embedded_soc_pio_1;
 
+	component embedded_soc_pio_2 is
+		port (
+			clk      : in  std_logic                     := 'X';             -- clk
+			reset_n  : in  std_logic                     := 'X';             -- reset_n
+			address  : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- address
+			readdata : out std_logic_vector(31 downto 0);                    -- readdata
+			in_port  : in  std_logic_vector(3 downto 0)  := (others => 'X')  -- export
+		);
+	end component embedded_soc_pio_2;
+
+	component embedded_soc_pio_3 is
+		port (
+			clk      : in  std_logic                     := 'X';             -- clk
+			reset_n  : in  std_logic                     := 'X';             -- reset_n
+			address  : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- address
+			readdata : out std_logic_vector(31 downto 0);                    -- readdata
+			in_port  : in  std_logic_vector(31 downto 0) := (others => 'X')  -- export
+		);
+	end component embedded_soc_pio_3;
+
+	component embedded_soc_pio_4 is
+		port (
+			clk        : in  std_logic                     := 'X';             -- clk
+			reset_n    : in  std_logic                     := 'X';             -- reset_n
+			address    : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- address
+			write_n    : in  std_logic                     := 'X';             -- write_n
+			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			chipselect : in  std_logic                     := 'X';             -- chipselect
+			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
+			out_port   : out std_logic_vector(31 downto 0)                     -- export
+		);
+	end component embedded_soc_pio_4;
+
 	component embedded_soc_mm_interconnect_0 is
 		port (
 			clk_0_clk_clk                                  : in  std_logic                     := 'X';             -- clk
@@ -145,7 +181,16 @@ architecture rtl of embedded_soc is
 			pio_0_s1_writedata                             : out std_logic_vector(31 downto 0);                    -- writedata
 			pio_0_s1_chipselect                            : out std_logic;                                        -- chipselect
 			pio_1_s1_address                               : out std_logic_vector(1 downto 0);                     -- address
-			pio_1_s1_readdata                              : in  std_logic_vector(31 downto 0) := (others => 'X')  -- readdata
+			pio_1_s1_readdata                              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			pio_2_s1_address                               : out std_logic_vector(1 downto 0);                     -- address
+			pio_2_s1_readdata                              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			pio_3_s1_address                               : out std_logic_vector(1 downto 0);                     -- address
+			pio_3_s1_readdata                              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			pio_4_s1_address                               : out std_logic_vector(1 downto 0);                     -- address
+			pio_4_s1_write                                 : out std_logic;                                        -- write
+			pio_4_s1_readdata                              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			pio_4_s1_writedata                             : out std_logic_vector(31 downto 0);                    -- writedata
+			pio_4_s1_chipselect                            : out std_logic                                         -- chipselect
 		);
 	end component embedded_soc_mm_interconnect_0;
 
@@ -265,6 +310,15 @@ architecture rtl of embedded_soc is
 	signal mm_interconnect_0_pio_0_s1_writedata                            : std_logic_vector(31 downto 0); -- mm_interconnect_0:pio_0_s1_writedata -> pio_0:writedata
 	signal mm_interconnect_0_pio_1_s1_readdata                             : std_logic_vector(31 downto 0); -- pio_1:readdata -> mm_interconnect_0:pio_1_s1_readdata
 	signal mm_interconnect_0_pio_1_s1_address                              : std_logic_vector(1 downto 0);  -- mm_interconnect_0:pio_1_s1_address -> pio_1:address
+	signal mm_interconnect_0_pio_2_s1_readdata                             : std_logic_vector(31 downto 0); -- pio_2:readdata -> mm_interconnect_0:pio_2_s1_readdata
+	signal mm_interconnect_0_pio_2_s1_address                              : std_logic_vector(1 downto 0);  -- mm_interconnect_0:pio_2_s1_address -> pio_2:address
+	signal mm_interconnect_0_pio_3_s1_readdata                             : std_logic_vector(31 downto 0); -- pio_3:readdata -> mm_interconnect_0:pio_3_s1_readdata
+	signal mm_interconnect_0_pio_3_s1_address                              : std_logic_vector(1 downto 0);  -- mm_interconnect_0:pio_3_s1_address -> pio_3:address
+	signal mm_interconnect_0_pio_4_s1_chipselect                           : std_logic;                     -- mm_interconnect_0:pio_4_s1_chipselect -> pio_4:chipselect
+	signal mm_interconnect_0_pio_4_s1_readdata                             : std_logic_vector(31 downto 0); -- pio_4:readdata -> mm_interconnect_0:pio_4_s1_readdata
+	signal mm_interconnect_0_pio_4_s1_address                              : std_logic_vector(1 downto 0);  -- mm_interconnect_0:pio_4_s1_address -> pio_4:address
+	signal mm_interconnect_0_pio_4_s1_write                                : std_logic;                     -- mm_interconnect_0:pio_4_s1_write -> mm_interconnect_0_pio_4_s1_write:in
+	signal mm_interconnect_0_pio_4_s1_writedata                            : std_logic_vector(31 downto 0); -- mm_interconnect_0:pio_4_s1_writedata -> pio_4:writedata
 	signal irq_mapper_receiver0_irq                                        : std_logic;                     -- jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
 	signal nios2_gen2_0_irq_irq                                            : std_logic_vector(31 downto 0); -- irq_mapper:sender_irq -> nios2_gen2_0:irq
 	signal rst_controller_reset_out_reset                                  : std_logic;                     -- rst_controller:reset_out -> [irq_mapper:reset, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, onchip_memory2_0:reset, rst_controller_reset_out_reset:in, rst_translator:in_reset]
@@ -273,7 +327,8 @@ architecture rtl of embedded_soc is
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read_ports_inv  : std_logic;                     -- mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read:inv -> jtag_uart_0:av_read_n
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write_ports_inv : std_logic;                     -- mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write:inv -> jtag_uart_0:av_write_n
 	signal mm_interconnect_0_pio_0_s1_write_ports_inv                      : std_logic;                     -- mm_interconnect_0_pio_0_s1_write:inv -> pio_0:write_n
-	signal rst_controller_reset_out_reset_ports_inv                        : std_logic;                     -- rst_controller_reset_out_reset:inv -> [jtag_uart_0:rst_n, nios2_gen2_0:reset_n, pio_0:reset_n, pio_1:reset_n]
+	signal mm_interconnect_0_pio_4_s1_write_ports_inv                      : std_logic;                     -- mm_interconnect_0_pio_4_s1_write:inv -> pio_4:write_n
+	signal rst_controller_reset_out_reset_ports_inv                        : std_logic;                     -- rst_controller_reset_out_reset:inv -> [jtag_uart_0:rst_n, nios2_gen2_0:reset_n, pio_0:reset_n, pio_1:reset_n, pio_2:reset_n, pio_3:reset_n, pio_4:reset_n]
 
 begin
 
@@ -357,6 +412,36 @@ begin
 			in_port  => switches_export                           -- external_connection.export
 		);
 
+	pio_2 : component embedded_soc_pio_2
+		port map (
+			clk      => clk_clk,                                  --                 clk.clk
+			reset_n  => rst_controller_reset_out_reset_ports_inv, --               reset.reset_n
+			address  => mm_interconnect_0_pio_2_s1_address,       --                  s1.address
+			readdata => mm_interconnect_0_pio_2_s1_readdata,      --                    .readdata
+			in_port  => buttons_export                            -- external_connection.export
+		);
+
+	pio_3 : component embedded_soc_pio_3
+		port map (
+			clk      => clk_clk,                                  --                 clk.clk
+			reset_n  => rst_controller_reset_out_reset_ports_inv, --               reset.reset_n
+			address  => mm_interconnect_0_pio_3_s1_address,       --                  s1.address
+			readdata => mm_interconnect_0_pio_3_s1_readdata,      --                    .readdata
+			in_port  => nios_input_export                         -- external_connection.export
+		);
+
+	pio_4 : component embedded_soc_pio_4
+		port map (
+			clk        => clk_clk,                                    --                 clk.clk
+			reset_n    => rst_controller_reset_out_reset_ports_inv,   --               reset.reset_n
+			address    => mm_interconnect_0_pio_4_s1_address,         --                  s1.address
+			write_n    => mm_interconnect_0_pio_4_s1_write_ports_inv, --                    .write_n
+			writedata  => mm_interconnect_0_pio_4_s1_writedata,       --                    .writedata
+			chipselect => mm_interconnect_0_pio_4_s1_chipselect,      --                    .chipselect
+			readdata   => mm_interconnect_0_pio_4_s1_readdata,        --                    .readdata
+			out_port   => nios_output_export                          -- external_connection.export
+		);
+
 	mm_interconnect_0 : component embedded_soc_mm_interconnect_0
 		port map (
 			clk_0_clk_clk                                  => clk_clk,                                                     --                                clk_0_clk.clk
@@ -401,7 +486,16 @@ begin
 			pio_0_s1_writedata                             => mm_interconnect_0_pio_0_s1_writedata,                        --                                         .writedata
 			pio_0_s1_chipselect                            => mm_interconnect_0_pio_0_s1_chipselect,                       --                                         .chipselect
 			pio_1_s1_address                               => mm_interconnect_0_pio_1_s1_address,                          --                                 pio_1_s1.address
-			pio_1_s1_readdata                              => mm_interconnect_0_pio_1_s1_readdata                          --                                         .readdata
+			pio_1_s1_readdata                              => mm_interconnect_0_pio_1_s1_readdata,                         --                                         .readdata
+			pio_2_s1_address                               => mm_interconnect_0_pio_2_s1_address,                          --                                 pio_2_s1.address
+			pio_2_s1_readdata                              => mm_interconnect_0_pio_2_s1_readdata,                         --                                         .readdata
+			pio_3_s1_address                               => mm_interconnect_0_pio_3_s1_address,                          --                                 pio_3_s1.address
+			pio_3_s1_readdata                              => mm_interconnect_0_pio_3_s1_readdata,                         --                                         .readdata
+			pio_4_s1_address                               => mm_interconnect_0_pio_4_s1_address,                          --                                 pio_4_s1.address
+			pio_4_s1_write                                 => mm_interconnect_0_pio_4_s1_write,                            --                                         .write
+			pio_4_s1_readdata                              => mm_interconnect_0_pio_4_s1_readdata,                         --                                         .readdata
+			pio_4_s1_writedata                             => mm_interconnect_0_pio_4_s1_writedata,                        --                                         .writedata
+			pio_4_s1_chipselect                            => mm_interconnect_0_pio_4_s1_chipselect                        --                                         .chipselect
 		);
 
 	irq_mapper : component embedded_soc_irq_mapper
@@ -484,6 +578,8 @@ begin
 	mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write_ports_inv <= not mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write;
 
 	mm_interconnect_0_pio_0_s1_write_ports_inv <= not mm_interconnect_0_pio_0_s1_write;
+
+	mm_interconnect_0_pio_4_s1_write_ports_inv <= not mm_interconnect_0_pio_4_s1_write;
 
 	rst_controller_reset_out_reset_ports_inv <= not rst_controller_reset_out_reset;
 
