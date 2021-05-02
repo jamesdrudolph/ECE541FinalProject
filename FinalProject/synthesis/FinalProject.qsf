@@ -1,6 +1,5 @@
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSXFC6D6F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY FinalProject
 set_global_assignment -name SMART_RECOMPILE OFF
 set_global_assignment -name SAVE_DISK_SPACE ON
 set_global_assignment -name OPTIMIZATION_TECHNIQUE BALANCED
@@ -470,3 +469,5 @@ set_instance_assignment -name LOCATION "PIN_W20" -to IRDA_RXD
 set_instance_assignment -name LOCATION "PIN_W21" -to IRDA_TXD 
 set_instance_assignment -entity myFirstFpga -name PARTITION_HIERARCHY "root_partition" -section_id Top -to | 
 
+
+set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 SP0.09std Lite Edition"

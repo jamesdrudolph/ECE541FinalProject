@@ -88,7 +88,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "reset_n" (rect 181 267 404 544)(font "Arial" (color 0 0 0)))
 		(text "switches" (rect 126 283 300 579)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 181 307 398 624)(font "Arial" (color 0 0 0)))
-		(text " embedded_soc " (rect 349 328 782 666)(font "Arial" ))
+		(text " system " (rect 381 328 810 666)(font "Arial" ))
 		(line (pt 176 32)(pt 240 32)(line_width 1))
 		(line (pt 240 32)(pt 240 328)(line_width 1))
 		(line (pt 176 328)(pt 240 328)(line_width 1))
