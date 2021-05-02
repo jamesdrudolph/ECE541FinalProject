@@ -112,8 +112,7 @@ begin
 	s1: for i in 1 to 40 generate
 		kData(i) <= training_data(i - 1 + offset);
 	end generate;
-	
-	mins(offset_count) <= min_dists;		  
+			  
 	
 	process(CLOCK_50)
 	begin
