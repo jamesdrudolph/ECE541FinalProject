@@ -36,9 +36,9 @@ void printClassificationResult() {
 	printf("Actual: %s\nClassified as: %s\n\n", resolveToFlower(actual), resolveToFlower(classified));
 }
 
-int* getAttributesFromUser() {
+char* getAttributesFromUser() {
     static char strs[][16] = { "Sepal length", "Sepal width", "Petal length", "Petal width" };
-    static int attributes[4];
+    static char attributes[4];
 
     printf("An Iris flower can be described using 4 attributes: sepal length and width, and petal length and width.\nPlease enter the 4 attributes in millimeters between 0 and 255.\n\n");
 
@@ -48,7 +48,7 @@ int* getAttributesFromUser() {
         char buf[4];
         fgets(buf, 4, stdin);
         printf("You entered: %s\n", buf);
-        attributes[i] = atoi(buf);
+        attributes[i] = (char)atoi(buf);
     }
 
     return attributes;
@@ -56,15 +56,13 @@ int* getAttributesFromUser() {
 
 int main()
 {
-	int *a = getAttributesFromUser();
+    //unsigned char *mem = mmap((void *)0x21000, 0x10, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+    //unsigned int *nios_output = (unsigned int*)mem;
 
-	for (int i = 0; i < 4; i++) {
-		*(nios_output + i) = (char)*(a + i);
-	}
+    char *a = getAttributesFromUser();
 
-	for (int i = 0; i < 4; i++) {
-		printf("%u: %c\n", nios_output + i, *(nios_output + i));
-	}
+    *nios_output = *((int*)a);
+    printf("%d", *nios_output);
 
-	return 0;
+    return 0;
 }
