@@ -3,9 +3,10 @@ use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 
 package Common is
-	type DataAttributes is array(0 to 4) of integer; -- range 0 to 127;	  
+	type DataAttributes is array(0 to 4) of integer range 0 to 127;	
+	type DataAttributes_u is array(0 to 4) of integer range 0 to 16129;
 	type DataArray is array(0 to 119) of DataAttributes; 
-	type TestClass is array(1 to 40) of integer range 0 to 2;  
+	type TestClass is array(1 to 30) of integer range 0 to 2;  
 	type DataSlice is array(1 to 40) of DataAttributes;		
 	type classarr is array(natural range <>) of integer range 0 to 2;	
 	type distarr is array(natural range <>) of unsigned(7 downto 0);

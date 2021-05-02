@@ -1,4 +1,4 @@
-85
+108
 ~E 1 "../src/classifer.vhd" 6 classifier
 ~A 1 "../src/classifer.vhd" 16 arch
 ~E 1 "../src/TestBench/classifier_TB.vhd" 10 classifier_tb
@@ -8,7 +8,7 @@
 ~E 1 "../src/Test/euclideandistance_TB.vhd" 9 euclideandistance_tb
 ~A 1 "../src/Test/euclideandistance_TB.vhd" 12 TB_ARCHITECTURE
 ~E 1 "../src/FinalProject.vhd" 6 FinalProject
-~A 1 "../src/FinalProject.vhd" 15 arch
+~A 1 "../src/FinalProject.vhd" 21 arch
 ~E 1 "../src/Test/finalproject_TB.vhd" 9 finalproject_tb
 ~A 1 "../src/Test/finalproject_TB.vhd" 12 TB_ARCHITECTURE
 ~E 1 "../src/IrisDataManager.vhd" 6 IrisDataManager
@@ -25,7 +25,7 @@
 ~A 1 "../src/Test/sqrt_TB.vhd" 9 TB_ARCHITECTURE
 ~C 1 "../src/TestBench/classifier_TB.vhd" 82 testbench_for_classifier
 ~C 1 "../src/Test/euclideandistance_TB.vhd" 46 testbench_for_euclideandistance
-~C 1 "../src/Test/finalproject_TB.vhd" 46 testbench_for_finalproject
+~C 1 "../src/Test/finalproject_TB.vhd" 78 testbench_for_finalproject
 ~C 1 "../src/Test/irisdatamanager_TB.vhd" 58 testbench_for_irisdatamanager
 ~C 1 "../src/TestBench/knn_class_TB.vhd" 141 testbench_for_knn_class
 ~C 1 "../src/Test/sqrt_TB.vhd" 55 testbench_for_sqrt
