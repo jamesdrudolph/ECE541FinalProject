@@ -95,7 +95,8 @@ architecture arch of FinalProject is
 	constant data_offset: integer := 40;	
 	signal offset_count: integer range 0 to 2 := 0;	 
 	signal offset: integer range 0 to 80;
-	
+	signal data_sel: unsigned(4 downto 0);
+	--signal class_out: integer range 0 to 2;
 	
 begin
 	u0 : component embedded_soc
@@ -123,7 +124,7 @@ begin
 		min_dists			=> min_dists,
 		done				=> done_k
 		);	   
-		
+	
 	c1: component classifier
 	port map (
 		CLK					=> CLOCK_50,							   
@@ -136,9 +137,34 @@ begin
 	offset <= data_offset * offset_count;	
 	s1: for i in 1 to 40 generate
 		kData(i) <= training_data(i - 1 + offset);
-	end generate;
+	end generate;  
 	
-	LEDR(2 downto 0) <= state;
+	LEDR(9 downto 3) <= (others => '0');
+	LEDR(2 downto 0) <= state; 
+	
+	HEX1 <= (others => '1');
+	HEX2 <= (others => '1');
+	HEX3 <= (others => '1');
+	HEX4 <= (others => '1');
+	HEX5 <= (others => '1');
+	
+	data_sel <= unsigned(SW(4 downto 0));
+	
+	
+	process(data_sel, classifications)
+	begin
+		if to_integer(data_sel) = 0 or to_integer(data_sel) > 30 then
+			HEX0 <= (others => '0');
+		else
+			case classifications(to_integer(data_sel)) is
+				when 0 => HEX0 <= "0000001";
+				when 1 => HEX0 <= "1001111";
+				when 2 => HEX0 <= "0010010";
+				when others => HEX0 <= (others => '0');
+			end case;
+		end if;
+	end process;
+	
 	
 	process(CLOCK_50)
 	begin	
@@ -207,7 +233,7 @@ begin
 					nstate(1) <= '1';
 			end if;		
 			when "100" =>
-				nstate <= "100";                     -- state 3 still being developed. perhaps wait for console input
+			nstate <= "100";                     -- state 3 still being developed. perhaps wait for console input
 			when others => 
 			nstate(0) <= '1';
 		end case;

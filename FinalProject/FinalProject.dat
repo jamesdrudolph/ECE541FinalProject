@@ -36,10 +36,10 @@ set_global_assignment -name CONFIGURATION_DEVICE Auto
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF -family "Cyclone V"
 set_global_assignment -name DEVICE_IO_STANDARD 3.0-V LVTTL
 set_global_assignment -name GENERATE_TTF_FILE ON
-set_global_assignment -name GENERATE_RBF_FILE OFF
-set_global_assignment -name GENERATE_JBC_FILE OFF
-set_global_assignment -name GENERATE_SVF_FILE OFF
-set_global_assignment -name GENERATE_JAM_FILE OFF
+set_global_assignment -name GENERATE_RBF_FILE ON
+set_global_assignment -name GENERATE_JBC_FILE ON
+set_global_assignment -name GENERATE_SVF_FILE ON
+set_global_assignment -name GENERATE_JAM_FILE ON
 set_global_assignment -name GENERATE_HEX_FILE OFF
 set_global_assignment -name HEXOUT_FILE_START_ADDRESS 0
 set_global_assignment -name HEXOUT_FILE_COUNT_DIRECTION "UP"

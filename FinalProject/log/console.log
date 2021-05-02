@@ -655,3 +655,76 @@ acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
 # Compile success 0 Errors 1 Warnings  Analysis time :  78.0 [ms]
 endsim
 # VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 FinalProject.vhd (101): Component /finalproject_tb/UUT/u0 : embedded_soc not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 3.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7395 kB (elbread=1283 elab2=5938 kernel=172 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\wave.asdb
+#  1:29 PM, Sunday, May 2, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 3 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/count}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/classifications}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/knn_out}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/rst_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/done_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/rst_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/done_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_TB/UUT/offset}
+# 1 signal(s) traced.
+run @100us
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 30 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 30 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: stopped at time: 100 us
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalClassification.asdb'.
+# Adding file C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\FinalClassification.asdb ... Done
+# Adding file C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\FinalClassification.awc ... Done
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (101, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Error: COMP96_0015: FinalProject.vhd : (155, 20): '=>' expected.
+# Error: COMP96_0331: FinalProject.vhd : (155, 20): Syntax error in expression.
+# Compile failure 2 Errors 0 Wa
