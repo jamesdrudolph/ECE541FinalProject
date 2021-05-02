@@ -138,6 +138,7 @@ begin
 		kData(i) <= training_data(i - 1 + offset);
 	end generate;
 	
+	LEDR(2 downto 0) <= state;
 	
 	process(CLOCK_50)
 	begin	
@@ -168,11 +169,11 @@ begin
 					if offset_count < 2 then
 						offset_count <= offset_count + 1;
 					else
-						offset_count <= 0;
+						offset_count <= 0; 
+						rst_c <= '0';
 					end if;		 
 					mins(offset_count) <= min_dists;
 					rst_k <= '1';  
-					rst_c <= '0';
 				end if;
 				
 				IrisIndex <= to_unsigned(count + 1, 7);
@@ -204,7 +205,9 @@ begin
 					nstate(2) <= '1';
 				else
 					nstate(1) <= '1';
-			end if;									-- state 3 still being developed. perhaps wait for console input
+			end if;		
+			when "100" =>
+				nstate <= "100";                     -- state 3 still being developed. perhaps wait for console input
 			when others => 
 			nstate(0) <= '1';
 		end case;
