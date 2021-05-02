@@ -22,7 +22,7 @@ architecture arch of EuclideanDistance is
 		);
 	end component;
 	
-	signal EuclidDistanceArray	: DataAttributes;
+	signal EuclidDistanceArray	: DataAttributes_u;
 	signal EuclidDistance		: std_logic_vector(7 downto 0);
 	signal EuclidRadical		: std_logic_vector(15 downto 0);
 	signal SqrtRemainder 		: std_logic_vector(8 downto 0);

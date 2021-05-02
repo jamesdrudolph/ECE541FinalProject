@@ -181,9 +181,9 @@ begin
 				if done_c = '1' then
 					if count < 29 then
 						count <= count + 1;			
-						classifications(count + 1) <= knn_out; -- knn_out is the predicted class of the item. possibly different name;
 					end if;
-					rst_c <= '1';
+					rst_c <= '1';  
+					classifications(count + 1) <= knn_out; -- knn_out is the predicted class of the item. possibly different name
 				end if;
 			else count <= 0;	
 			end if;	
@@ -201,7 +201,7 @@ begin
 					nstate(0) <= '1';
 			end if;
 			when "010" =>							-- state 2\1 goes through testing data and classifies
-				if count = 40 then
+				if count = 29 then
 					nstate(2) <= '1';
 				else
 					nstate(1) <= '1';
