@@ -151,7 +151,7 @@ begin
 				IrisDataType <= '0';  --state 0 loads training data	   
 				if count < 120 then 
 					count <= count + 1; 
-					IrisIndex <= to_unsigned(count + 1, 7);
+					IrisIndex <= to_unsigned(count, 7);
 				else count <= 0;
 				end if;	
 				
@@ -176,10 +176,10 @@ begin
 					rst_k <= '1';  
 				end if;
 				
-				IrisIndex <= to_unsigned(count + 1, 7);
+				IrisIndex <= to_unsigned(count, 7);
 				test_data <= IrisDataOut;
 				if done_c = '1' then
-					if count < 40 then
+					if count < 29 then
 						count <= count + 1;			
 						classifications(count + 1) <= knn_out; -- knn_out is the predicted class of the item. possibly different name;
 					end if;

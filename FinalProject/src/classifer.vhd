@@ -36,7 +36,8 @@ begin
 			count0 <= 0;
 			count1 <= 0;
 			count2 <= 0;
-			round <= 1;
+			round <= 1;	
+			done <= '0';
 		elsif rising_edge(clk) then
 			--need to make acutally sequential so it counts properly 
 			case round is
