@@ -1,4 +1,4 @@
-109
+115
 ~E 1 "../src/classifer.vhd" 6 classifier
 ~A 1 "../src/classifer.vhd" 16 arch
 ~E 1 "../src/TestBench/classifier_TB.vhd" 10 classifier_tb
