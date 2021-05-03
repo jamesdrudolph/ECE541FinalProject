@@ -19,7 +19,7 @@ entity FinalProject is
 end entity FinalProject;
 
 architecture arch of FinalProject is	
-		component embedded_soc is
+	component embedded_soc is
 		port (
 			clk_clk            : in  std_logic                     := 'X';             -- clk
 			led_export         : out std_logic_vector(9 downto 0);                     -- export
@@ -28,7 +28,7 @@ architecture arch of FinalProject is
 			buttons_export     : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- export
 			nios_input_export  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
 			nios_output_export : out std_logic_vector(31 downto 0)                     -- export
-		);
+			);
 	end component embedded_soc;
 	
 	component IrisDataManager is
@@ -107,7 +107,7 @@ architecture arch of FinalProject is
 	signal SW_meta, SW_db: std_logic_vector(9 downto 0);
 	
 begin
-		
+	
 	u0 : component embedded_soc
 	port map (
 		clk_clk            => CLOCK_50,            --         clk.clk
@@ -117,7 +117,7 @@ begin
 		buttons_export     => KEY_db,     --     buttons.export
 		nios_input_export  => nios_input_export,  --  nios_input.export
 		nios_output_export => nios_output_export  -- nios_output.export
-	);
+		);
 	
 	u1 : component IrisDataManager
 	port map (
@@ -223,15 +223,16 @@ begin
 					mins(offset_count) <= min_dists;
 					rst_k <= '1';  
 				end if;
-				
-				IrisIndex <= to_unsigned(count, 7);
-				test_data <= IrisDataOut;
+				if count < 30 then
+					IrisIndex <= to_unsigned(count, 7);
+					test_data <= IrisDataOut; 
+				end if;
 				if done_c = '1' then
-					if count < 29 then
+					if count <= 29 then
 						count <= count + 1;	
-						
+						classifications(count + 1) <= knn_out;
 					end if;	  
-					classifications(count + 1) <= knn_out;
+					
 					rst_c <= '1';  
 				end if;
 			else count <= 0;	
