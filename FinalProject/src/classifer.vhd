@@ -52,7 +52,6 @@ begin
 			end if;
 			
 			if count0 + count1 + count2 < 5 then	  
-				-- This is probably not technically correct but it will most likely produce a decent result	
 				if mins(0)(round) < mins(1)(round) and mins(0)(round) < mins(2)(round) then	 
 					count0 <= count0 + 1;
 				elsif mins(1)(round) < mins(2)(round) then

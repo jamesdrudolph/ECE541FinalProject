@@ -1,4 +1,4 @@
-Active-HDL 11.1.263.7352 2021-05-02 13:29:30
+Active-HDL 11.1.263.7352 2021-05-03 14:58:58
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(finalproject_tb)
@@ -38,9 +38,3 @@ finalproject                        | None
 ieee                                | Standard IEEE packages library
 std                                 | Standard VHDL library
 ----------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
-
-
-The performance of simulation is reduced. Version EDU Edition
