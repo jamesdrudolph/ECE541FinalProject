@@ -103,15 +103,18 @@ architecture arch of FinalProject is
 	signal data_sel: unsigned(4 downto 0);
 	--signal class_out: integer range 0 to 2;
 	
+	signal key_meta, key_db: std_logic_vector(3 downto 0);
+	signal SW_meta, SW_db: std_logic_vector(9 downto 0);
+	
 begin
 		
 	u0 : component embedded_soc
 	port map (
 		clk_clk            => CLOCK_50,            --         clk.clk
 		led_export         => LEDR_export,         --         led.export
-		reset_reset_n      => KEY(0),      --       reset.reset_n
-		switches_export    => SW,    --    switches.export
-		buttons_export     => KEY,     --     buttons.export
+		reset_reset_n      => KEY_db(0),      --       reset.reset_n
+		switches_export    => SW_db,    --    switches.export
+		buttons_export     => KEY_db,     --     buttons.export
 		nios_input_export  => nios_input_export,  --  nios_input.export
 		nios_output_export => nios_output_export  -- nios_output.export
 	);
@@ -143,6 +146,16 @@ begin
 		done				=> done_c
 		);
 	
+	process(CLOCK_50)
+	begin
+		if rising_edge(CLOCK_50) then
+			key_meta <= KEY;
+			SW_meta <= SW;
+			key_db <= key_meta;
+			SW_db <= SW_meta;	
+		end if;
+	end process;	
+	
 	offset <= data_offset * offset_count;	
 	s1: for i in 1 to 40 generate
 		kData(i) <= training_data(i - 1 + offset);
@@ -157,7 +170,7 @@ begin
 	HEX4 <= (others => '1');
 	HEX5 <= (others => '1');
 	
-	data_sel <= unsigned(SW(4 downto 0));
+	data_sel <= unsigned(SW_db(4 downto 0));
 	
 	
 	process(data_sel, classifications)
@@ -177,7 +190,7 @@ begin
 	
 	process(CLOCK_50)
 	begin	
-		if KEY(0) = '0' then
+		if KEY_db(0) = '0' then
 			state <= "001";
 			count <= 0;
 		elsif rising_edge(CLOCK_50) then
@@ -215,10 +228,11 @@ begin
 				test_data <= IrisDataOut;
 				if done_c = '1' then
 					if count < 29 then
-						count <= count + 1;			
-					end if;
+						count <= count + 1;	
+						
+					end if;	  
+					classifications(count + 1) <= knn_out;
 					rst_c <= '1';  
-					classifications(count + 1) <= knn_out; -- knn_out is the predicted class of the item. possibly different name
 				end if;
 			else count <= 0;	
 			end if;	
@@ -236,7 +250,7 @@ begin
 					nstate(0) <= '1';
 			end if;
 			when "010" =>							-- state 2\1 goes through testing data and classifies
-				if count = 29 then
+				if count = 30 then
 					nstate(2) <= '1';
 				else
 					nstate(1) <= '1';
