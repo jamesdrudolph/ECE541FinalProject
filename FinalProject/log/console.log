@@ -1,0 +1,490 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.9 [s].
+# Waveform file 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/classifier.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/classifier.asdb'.
+# Waveform file 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn.asdb'.
+# Waveform file 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/euclideandistance_tb.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/euclideandistance_tb.asdb'.
+# Waveform file 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/sqrt_tb.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/sqrt_tb.asdb'.
+# Waveform file 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/irisdatamanager_tb.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/irisdatamanager_tb.asdb'.
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (111, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/Common.vhd $dsn/src/EuclideanDistance.vhd $dsn/src/IrisDataManager.vhd $dsn/src/FinalProject.vhd $dsn/src/knn_class.vhd $dsn/src/classifer.vhd $dsn/MEGA/sqrt.vhd $dsn/src/Test/euclideandistance_TB.vhd $dsn/src/Test/irisdatamanager_TB.vhd $dsn/src/Test/sqrt_TB.vhd $dsn/src/Test/finalproject_TB.vhd $dsn/src/TestBench/knn_class_TB.vhd $dsn/src/TestBench/classifier_TB.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd
+# Compile Package "Common"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/EuclideanDistance.vhd
+# Compile Entity "EuclideanDistance"
+# Compile Architecture "arch" of Entity "EuclideanDistance"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/IrisDataManager.vhd
+# Compile Entity "IrisDataManager"
+# Compile Architecture "arch" of Entity "IrisDataManager"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (111, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd
+# Compile Entity "knn_class"
+# Compile Architecture "arch" of Entity "knn_class"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/classifer.vhd
+# Compile Entity "classifier"
+# Compile Architecture "arch" of Entity "classifier"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/MEGA/sqrt.vhd
+# Compile Entity "sqrt"
+# Compile Architecture "SYN" of Entity "sqrt"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/euclideandistance_TB.vhd
+# Compile Entity "euclideandistance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "euclideandistance_tb"
+# Compile Configuration "TESTBENCH_FOR_euclideandistance"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd
+# Compile Entity "irisdatamanager_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"
+# Compile Configuration "TESTBENCH_FOR_irisdatamanager"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/sqrt_TB.vhd
+# Compile Entity "sqrt_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "sqrt_tb"
+# Compile Configuration "TESTBENCH_FOR_sqrt"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/finalproject_TB.vhd
+# Compile Entity "finalproject_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "finalproject_tb"
+# Compile Configuration "TESTBENCH_FOR_finalproject"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/TestBench/knn_class_TB.vhd
+# Compile Entity "knn_class_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "knn_class_tb"
+# Compile Configuration "TESTBENCH_FOR_knn_class"
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/TestBench/classifier_TB.vhd
+# Compile Entity "classifier_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "classifier_tb"
+# Compile Configuration "TESTBENCH_FOR_classifier"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 FinalProject.vhd (111): Component /finalproject_tb/UUT/u0 : embedded_soc not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 1.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7403 kB (elbread=1283 elab2=5943 kernel=176 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\wave.asdb
+#  3:48 PM, Monday, May 3, 2021
+#  Simulation has been initialized
+# 1 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/count}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/classifications}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/offset}
+# 1 signal(s) traced.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 35370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 38430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 41430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 44350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 47290 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 53370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 56450 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 59390 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 62370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 65470 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 68570 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 71530 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 74650 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 77770 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 80850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 83750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 86750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 89830 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+endsim
+# KERNEL: stopped at time: 1514890 ns
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (111, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 FinalProject.vhd (111): Component /finalproject_tb/UUT/u0 : embedded_soc not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7403 kB (elbread=1283 elab2=5943 kernel=176 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\wave.asdb
+#  3:53 PM, Monday, May 3, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/wave.asdb'.
+add wave -noreg {finalproject_tb/UUT/count}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/classifications}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/offset}
+# 1 signal(s) traced.
+run @100us
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 35370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 38430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 41430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 44350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 47290 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 53370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 56450 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 59390 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 62370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 65470 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 68570 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 71530 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 74650 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 77770 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 80850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 83750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 86750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 89830 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 92850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# RUNTIME: Fatal Error: RUNTIME_0047 IrisDataManager.vhd (197): Index 30 out of range (0 to 29).
+# KERNEL: Time: 92890 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/u1,  Process: line__191.
+# KERNEL: Stopped at time 92890 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (111, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 FinalProject.vhd (111): Component /finalproject_tb/UUT/u0 : embedded_soc not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7403 kB (elbread=1283 elab2=5943 kernel=176 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\wave.asdb
+#  3:56 PM, Monday, May 3, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/wave.asdb'.
+add wave -noreg {finalproject_tb/UUT/count}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/classifications}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/offset}
+# 1 signal(s) traced.
+run @100us
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 35370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 38430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 41430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 44350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 47290 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 53370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 56450 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 59390 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 62370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 65470 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 68570 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 71530 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 74650 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 77770 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 80850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 83750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 86750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 89830 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 92850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# RUNTIME: Fatal Error: RUNTIME_0047 IrisDataManager.vhd (197): Index 30 out of range (0 to 29).
+# KERNEL: Time: 92890 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/u1,  Process: line__191.
+# KERNEL: Stopped at time 92890 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (111, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  32.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 FinalProject.vhd (111): Component /finalproject_tb/UUT/u0 : embedded_soc not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7403 kB (elbread=1283 elab2=5943 kernel=176 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\wave.asdb
+#  3:58 PM, Monday, May 3, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/wave.asdb'.
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (111, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  16.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +accb +accr finalproject_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELBREAD: Warning: ELBREAD_0037 FinalProject.vhd (111): Component /finalproject_tb/UUT/u0 : embedded_soc not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7403 kB (elbread=1283 elab2=5943 kernel=176 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\wave.asdb
+#  3:58 PM, Monday, May 3, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/wave.asdb'.
+add wave -noreg {finalproject_tb/UUT/count}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/classifications}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_k}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/rst_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/done_c}
+# 1 signal(s) traced.
+add wave -noreg {finalproject_tb/UUT/offset}
+# 1 signal(s) traced.
+run @100us
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /finalproject_tb/UUT/c1,  Process: line__33.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 35370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 38430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 41430 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 44350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 47290 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50350 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 53370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 56450 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 59390 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 62370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 65470 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 68570 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 71530 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 74650 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 77770 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 80850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 83750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 86750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 89830 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 92850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__176.
+# KERNEL: stopped at time: 100 us
+endsim
+# VSIM: Simulation has finished.
