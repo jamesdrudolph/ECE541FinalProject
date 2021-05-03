@@ -68,7 +68,6 @@ db/
 _output_files/
 PLLJ_PLLSPE_INFO.txt
 
-# adding ignoring log files
-*.log
+
 
 *.asv
