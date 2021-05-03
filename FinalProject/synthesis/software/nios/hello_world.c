@@ -59,10 +59,20 @@ int main()
     //unsigned char *mem = mmap((void *)0x21000, 0x10, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
     //unsigned int *nios_output = (unsigned int*)mem;
 
-    char *a = getAttributesFromUser();
+    /*char *a = getAttributesFromUser();
 
     *nios_output = *((int*)a);
-    printf("%d", *nios_output);
+    printf("%d", *nios_output);*/
+
+    while (true) {
+        uint state = 0xFF & (*nios_input >> 24);
+
+        if (state == 3) { //state to get user input from console
+            char *a = getAttributesFromUser();
+
+            *nios_output = *((int*)a)
+        }
+    }
 
     return 0;
 }
