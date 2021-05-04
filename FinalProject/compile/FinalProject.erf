@@ -1,46 +1,43 @@
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Common.vhd" 
-MESSAGE "Compile Package "Common"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/EuclideanDistance.vhd" 
-MESSAGE "Compile Entity "EuclideanDistance"" 
-MESSAGE "Compile Architecture "arch" of Entity "EuclideanDistance"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/IrisDataManager.vhd" 
-MESSAGE "Compile Entity "IrisDataManager"" 
-MESSAGE "Compile Architecture "arch" of Entity "IrisDataManager"" 
 MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 
+BEGINPROGRESS C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+UPDATEPROGRESS 1
 MESSAGE "Compile Entity "FinalProject"" 
+UPDATEPROGRESS 5
+UPDATEPROGRESS 6
 MESSAGE "Compile Architecture "arch" of Entity "FinalProject"" 
-WARNING ELAB1_0026: "There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found)." "C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 111 0
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/knn_class.vhd" 
-MESSAGE "Compile Entity "knn_class"" 
-MESSAGE "Compile Architecture "arch" of Entity "knn_class"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/classifer.vhd" 
-MESSAGE "Compile Entity "classifier"" 
-MESSAGE "Compile Architecture "arch" of Entity "classifier"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/MEGA/sqrt.vhd" 
-MESSAGE "Compile Entity "sqrt"" 
-MESSAGE "Compile Architecture "SYN" of Entity "sqrt"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/euclideandistance_TB.vhd" 
-MESSAGE "Compile Entity "euclideandistance_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "euclideandistance_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_euclideandistance"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/irisdatamanager_TB.vhd" 
-MESSAGE "Compile Entity "irisdatamanager_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "irisdatamanager_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_irisdatamanager"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/sqrt_TB.vhd" 
-MESSAGE "Compile Entity "sqrt_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "sqrt_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_sqrt"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/Test/finalproject_TB.vhd" 
-MESSAGE "Compile Entity "finalproject_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "finalproject_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_finalproject"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/TestBench/knn_class_TB.vhd" 
-MESSAGE "Compile Entity "knn_class_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "knn_class_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_knn_class"" 
-MESSAGE "File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/TestBench/classifier_TB.vhd" 
-MESSAGE "Compile Entity "classifier_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "classifier_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_classifier"" 
-SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]" 
+UPDATEPROGRESS 10
+UPDATEPROGRESS 13
+UPDATEPROGRESS 16
+UPDATEPROGRESS 19
+UPDATEPROGRESS 23
+UPDATEPROGRESS 24
+UPDATEPROGRESS 25
+UPDATEPROGRESS 26
+UPDATEPROGRESS 27
+UPDATEPROGRESS 28
+UPDATEPROGRESS 29
+UPDATEPROGRESS 30
+UPDATEPROGRESS 31
+UPDATEPROGRESS 32
+UPDATEPROGRESS 33
+UPDATEPROGRESS 34
+UPDATEPROGRESS 39
+UPDATEPROGRESS 41
+UPDATEPROGRESS 44
+UPDATEPROGRESS 47
+UPDATEPROGRESS 50
+UPDATEPROGRESS 51
+UPDATEPROGRESS 52
+UPDATEPROGRESS 53
+UPDATEPROGRESS 54
+UPDATEPROGRESS 55
+UPDATEPROGRESS 56
+UPDATEPROGRESS 62
+UPDATEPROGRESS 63
+UPDATEPROGRESS 86
+UPDATEPROGRESS 87
+UPDATEPROGRESS 98
+UPDATEPROGRESS 100
+WARNING ELAB1_0026: "There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found)." "C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd" 113 0
+ENDPROGRESS C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  47.0 [ms]" 
