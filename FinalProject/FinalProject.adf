@@ -90,7 +90,7 @@ TestBench=1
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=finalproject_tb|TB_ARCHITECTURE|0  
+HierarchyInformation=finalproject_tb|TB_ARCHITECTURE|0   
 ShowHide=ShowTopLevel
 Selected=
 

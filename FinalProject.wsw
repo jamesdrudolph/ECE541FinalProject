@@ -10,13 +10,6 @@ TemplateId=0
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/classifer.vhd|]
 TemplateId=0
-[OPENDOC|Aldec.WaveFormASDB.7|.\FinalProject\src/classifier.awc|]
-TemplateId=1
-[OPENDOC|Aldec.WaveFormASDB.7|.\FinalProject\src/knn.awc|]
-TemplateId=1
 [OPENDOC|Aldec.WaveFormASDB.7|.\FinalProject\src/euclideandistance_tb.awc|]
 TemplateId=1
-[OPENDOC|Aldec.WaveFormASDB.7|.\FinalProject\src/sqrt_tb.awc|]
-TemplateId=1
-[OPENDOC|Aldec.WaveFormASDB.7|.\FinalProject\src/irisdatamanager_tb.awc|]
-TemplateId=1
+ActiveDocument=1

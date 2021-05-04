@@ -83,11 +83,10 @@ architecture arch of FinalProject is
 	signal SqrtResult	:	std_logic_vector(7 downto 0);
 	signal SqrtRemainder:	std_logic_vector(8 downto 0);	 
 	
-	signal state, nstate: std_logic_vector(2 downto 0) := "001"; --size may change	 
+	signal state, nstate: std_logic_vector(3 downto 0) := (0 => '1', others => '0'); --size may change	 
 	signal count: integer range 0 to 120 := 0;
 	signal training_data: DataArray;	 
-	--signal wait_count: unsigned(2 downto 0) := (others => '1'); --may need to adjust depending on how long classification takes	 
-	--signal wait_zero: unsigned(wait_count'range) := (others => '0');
+	
 	signal test_data: DataAttributes;		 
 	signal classifications: TestClass;	
 	signal knn_out: integer range 0 to 2;	  
@@ -101,10 +100,13 @@ architecture arch of FinalProject is
 	signal offset_count: integer range 0 to 2 := 0;	 
 	signal offset: integer range 0 to 80;
 	signal data_sel: unsigned(4 downto 0);
-	--signal class_out: integer range 0 to 2;
+	
 	
 	signal key_meta, key_db: std_logic_vector(3 downto 0);
-	signal SW_meta, SW_db: std_logic_vector(9 downto 0);
+	signal SW_meta, SW_db: std_logic_vector(9 downto 0);	  
+	
+	signal test_in: dataAttributes := (56,27,42,13,1);	
+	signal class_out: integer range 0 to 2;
 	
 begin
 	
@@ -161,8 +163,8 @@ begin
 		kData(i) <= training_data(i - 1 + offset);
 	end generate;  
 	
-	LEDR(9 downto 3) <= (others => '0');
-	LEDR(2 downto 0) <= state; 
+	LEDR(9 downto 4) <= (others => '0');
+	LEDR(3 downto 0) <= state; 
 	
 	HEX1 <= (others => '1');
 	HEX2 <= (others => '1');
@@ -191,7 +193,7 @@ begin
 	process(CLOCK_50)
 	begin	
 		if KEY_db(0) = '0' then
-			state <= "001";
+			state <= "0001";
 			count <= 0;
 		elsif rising_edge(CLOCK_50) then
 			state <= nstate; 
@@ -208,7 +210,7 @@ begin
 				end if;
 				rst_k <= '1';
 				rst_c <= '1';
-				
+				offset_count <= 0;
 				
 			elsif state(1) = '1' then 			 --may need to change state for this line. this state is for running through the testing data
 				IrisDataType <= '1'; -- run through testing data	
@@ -234,32 +236,68 @@ begin
 					end if;	  
 					
 					rst_c <= '1';  
-				end if;
+				end if;	 
+			elsif state(2) = '1' then
+				rst_k <= '1';
+				rst_c <= '1';
+				offset_count <= 0;
+			elsif state(3) = '1' then
+				test_data <= test_in;
+				rst_k <= '0'; 
+				if done_k = '1' then 
+					if offset_count < 2 then
+						offset_count <= offset_count + 1;
+					else
+						offset_count <= 0; 
+						rst_c <= '0';
+					end if;		 
+					mins(offset_count) <= min_dists;
+					rst_k <= '1';  
+				end if;	 
+				if done_c = '1' then	
+					class_out <= knn_out;
+					rst_c <= '1';  
+				end if;	 
 			else count <= 0;	
 			end if;	
 		end if;
 	end process; 
 	
-	process(state, count)
+	process(state, count, key_db(1), done_c)
 	begin	
 		nstate <= (others => '0');
 		case state is
-			when "001" =>						   -- state 0 loads training data
+			when "0001" =>						   -- state 0 loads training data
 				if count = 120 then
 					nstate(1) <= '1';
 				else
 					nstate(0) <= '1';
-			end if;
-			when "010" =>							-- state 2\1 goes through testing data and classifies
+				end if;	 
+			
+			when "0010" =>							-- state 1 goes through testing data and classifies
 				if count = 30 then
 					nstate(2) <= '1';
 				else
 					nstate(1) <= '1';
-			end if;		
-			when "100" =>
-			nstate <= "100";                     -- state 3 still being developed. perhaps wait for console input
+				end if;	
+			
+			when "0100" =>
+				if key_db(1) = '0' then
+					nstate(3) <= '1';
+				else
+					nstate(2) <= '1';
+				end if;	 
+			
+			when "1000" =>
+				if done_c = '1' then
+					nstate(2) <= '1';
+				else
+					nstate(3) <= '1';
+				end if;
+			
 			when others => 
-			nstate(0) <= '1';
+				nstate(0) <= '1';
+			
 		end case;
 	end process;
 	
