@@ -180,6 +180,7 @@ begin
 		if to_integer(data_sel) > 30 then
 			HEX0 <= (others => '0');   
 		elsif to_integer(data_sel) = 0 then
+			nios_input_export(15 downto 8) <= std_logic_vector(to_unsigned(class_out, 8));
 			case class_out is
 				when 0 => HEX0 <= "0000001";
 				when 1 => HEX0 <= "1001111";
@@ -187,6 +188,7 @@ begin
 				when others => HEX0 <= (others => '0');
 			end case;
 		else
+			nios_input_export(15 downto 8) <= std_logic_vector(to_unsigned(classifications(to_integer(data_sel)), 8));
 			case classifications(to_integer(data_sel)) is
 				when 0 => HEX0 <= "0000001";
 				when 1 => HEX0 <= "1001111";
@@ -250,7 +252,15 @@ begin
 				rst_c <= '1';
 				offset_count <= 0;
 			elsif state(3) = '1' then
-				test_data <= test_in;
+				test_data(0) <= to_integer(unsigned(nios_output_export( 7 downto  0)));
+				test_data(1) <= to_integer(unsigned(nios_output_export(15 downto  8)));
+				test_data(2) <= to_integer(unsigned(nios_output_export(23 downto 16)));
+				test_data(3) <= to_integer(unsigned(nios_output_export(31 downto 24)));
+				--test_data <= DataAttributes(  to_integer(unsigned(nios_output_export(31 downto 24))),
+				--										to_integer(unsigned(nios_output_export(23 downto 16))),
+				--										to_integer(unsigned(nios_output_export(15 downto  8))),
+				--										to_integer(unsigned(nios_output_export( 7 downto  0))),
+				--										0);
 				rst_k <= '0'; 
 				if done_k = '1' then 
 					if offset_count < 2 then
@@ -272,7 +282,8 @@ begin
 	end process; 
 	
 	process(state, count, key_db(1), done_c)
-	begin	
+	begin
+		nios_input_export(27 downto 24) <= state;	
 		nstate <= (others => '0');
 		case state is
 			when "0001" =>						   -- state 0 loads training data
