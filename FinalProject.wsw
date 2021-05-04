@@ -1,15 +1,6 @@
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/Common.vhd|]
-TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/EuclideanDistance.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/FinalProject.vhd|]
 TemplateId=0
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/IrisDataManager.vhd|]
 TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/knn_class.vhd|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/Test/finalproject_TB.vhd|]
 TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/TestBench/classifier_TB.vhd|]
-TemplateId=0
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\FinalProject\src/classifer.vhd|]
-TemplateId=0
-[OPENDOC|Aldec.WaveFormASDB.7|.\FinalProject\src/euclideandistance_tb.awc|]
-TemplateId=1
-ActiveDocument=1

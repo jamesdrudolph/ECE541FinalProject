@@ -175,10 +175,17 @@ begin
 	data_sel <= unsigned(SW_db(4 downto 0));
 	
 	
-	process(data_sel, classifications)
-	begin
-		if to_integer(data_sel) = 0 or to_integer(data_sel) > 30 then
-			HEX0 <= (others => '0');
+	process(data_sel, classifications, state, class_out)
+	begin	 
+		if to_integer(data_sel) > 30 then
+			HEX0 <= (others => '0');   
+		elsif to_integer(data_sel) = 0 then
+			case class_out is
+				when 0 => HEX0 <= "0000001";
+				when 1 => HEX0 <= "1001111";
+				when 2 => HEX0 <= "0010010";
+				when others => HEX0 <= (others => '0');
+			end case;
 		else
 			case classifications(to_integer(data_sel)) is
 				when 0 => HEX0 <= "0000001";
@@ -187,6 +194,7 @@ begin
 				when others => HEX0 <= (others => '0');
 			end case;
 		end if;
+		
 	end process;
 	
 	

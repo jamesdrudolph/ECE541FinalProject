@@ -48,7 +48,7 @@ SimulationAccessNetsModules=
 [IMPLEMENTATION]
 UCF=
 DEVICE_TECHNOLOGY_MIGRATION_LIST=
-LAST_RUN=1620073544
+LAST_RUN=1620095934
 
 [SYNTHESIS]
 FAMILY=Quartus CycloneV
@@ -79,7 +79,7 @@ OUTPUT_IO_TIMING_NEAR_END_VMEAS_RISE=Half Signal Swing
 OUTPUT_IO_TIMING_NEAR_END_VMEAS_FALL=Half Signal Swing
 OUTPUT_IO_TIMING_FAR_END_VMEAS_RISE=Half Signal Swing
 OUTPUT_IO_TIMING_FAR_END_VMEAS_FALL=Half Signal Swing
-LAST_RUN=1620073544
+LAST_RUN=1620095934
 
 [Groups]
 MEGA=1
@@ -90,7 +90,7 @@ TestBench=1
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=finalproject_tb|TB_ARCHITECTURE|0   
+HierarchyInformation=finalproject_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -113,6 +113,8 @@ Selected=
 /classifier.awc=-1
 /FinalClassification.asdb=-1
 /FinalClassification.awc=-1
+/FinalWithState3.asdb=-1
+/FinalWithState3.awc=-1
 MEGA/..\..\MEGA\sqrt.vhd=-1
 MEGA/..\..\MEGA\sqrt_inst.vhd=-1
 MEGA/..\..\MEGA\sqrt.cmp=-1
@@ -148,6 +150,8 @@ TestBench/classifier_TB_runtest.do=-1
 .\src\classifier.awc=Accelerated Waveform Configuration
 .\src\FinalClassification.asdb=Accelerated Waveform File
 .\src\FinalClassification.awc=Accelerated Waveform Configuration
+.\src\FinalWithState3.asdb=Accelerated Waveform File
+.\src\FinalWithState3.awc=Accelerated Waveform Configuration
 .\MEGA\sqrt.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt_inst.vhd=VHDL SOURCE CODE
 .\MEGA\sqrt.cmp=EXTERNAL FILE

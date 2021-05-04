@@ -518,4 +518,37 @@ run
 # KERNEL: Time: 53370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
 # KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 # KERNEL: Time: 56450 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returnin
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 59390 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 62370 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 65470 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 68570 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 71530 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 74650 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 77770 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 80850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 83750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 86750 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 89830 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 92850 ns,  Iteration: 2,  Instance: /finalproject_tb/UUT,  Process: line__178.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work FinalProject -2008  $dsn/src/FinalProject.vhd
+# File: C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalProject.vhd
+# Compile Entity "FinalProject"
+# Compile Architecture "arch" of Entity "FinalProject"
+# Warning: ELAB1_0026: FinalProject.vhd : (113, 0): There is no default binding for component "embedded_soc". (No entity named "embedded_soc" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  47.0 [ms]
+# Waveform file 'untitled.awc' connected to 'C:/Users/elpea/OneDrive/Documents/ECE_541/ECE541FinalProject/FinalProject/src/FinalWithState3.asdb'.
+# Adding file C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\FinalWithState3.asdb ... Done
+# Adding file C:\Users\elpea\OneDrive\Documents\ECE_541\ECE541FinalProject\FinalProject\src\FinalWithState3.awc ... Done
